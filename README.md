@@ -1,11 +1,17 @@
-# Foundation Compass Stack
+# Foundation Sandbox
 
-This is a template for your next web project using Foundation, Grunt, Compass, and Assemble!
+This is a sandbox for your next web project using Foundation. It also comes with Grunt, Compass, and Assemble.
+
+## Usage
+
+This project contains every single Foundation component on a single page, to make it easy to tweak everything in one go until you have the customized Foundation installation perfect for your next endeavor.
+
+Once you like what you have, you can place your customizations into your app, or use the Grunt, Compass, and Assemble stack provided as the seed of your project.
 
 ## Requirements
 
 You'll need to have the following items installed before continuing.
-	
+
 * [Ruby](http://ruby-lang.org/): If you are on OSX or Linux, you should already have Ruby installed. If not, check their website for installation options.
 * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
 * [Grunt](http://gruntjs.com/): Run `sudo npm install -g grunt-cli`
@@ -15,13 +21,13 @@ You'll need to have the following items installed before continuing.
 
 ## Quickstart
 
-Clone this repository:
+Fork or clone this repository:
 
-`git clone git@github.com:zurb/foundation-compass-stack.git`
+`git clone git@github.com:christhekeele/foundation-sandbox.git`
 
 Navigate into the directory:
 
-`cd foundation-compass-stack`
+`cd foundation-sandbox`
 
 Install all the dependincies:
 
@@ -39,5 +45,9 @@ This will assemble all the pages and compile the Sass. You're set!
 * `src/assets`: All assets (scss, images, fonts, js, etc) go here.
 * `src/assets/scss/_settings.scss`: Foundation configuration settings go in here
 * `src/assets/scss/app.scss`: Application styles go here
-* `dist`: Static pages are assembled here. This is where you should view the site in your browser. **Don't edit these files directly. They will be overwritten!** 
+* `dist`: Static pages are assembled here. This is where you should view the site in your browser. **Don't edit these files directly. They will be overwritten!**
+* `pages`: This is where your Assemble HTML templates go.
+* `pages/index.html`: This is the landing page for your site, already kitted out with every Foundation component.
+* `partials`: This is where reusable templates that will be embedded in others go.
+* `partials/components`: This is where each Foundation component lives. Remove component partials from your `index.html` if you don't intend on using them to reduce clutter.
 
