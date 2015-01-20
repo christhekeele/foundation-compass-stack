@@ -1,0 +1,182 @@
+<h2 id="pagination">Pagination</h2>
+<h3 class="subheader">Pagination is a type of navigation that lets users tap through a series of related pages. Moving between pages has become less common with the advent of longer pages and AJAX loading, but if you need pagination, Foundation has you covered.</h3>
+
+<ul class="accordion" data-accordion>
+
+  <li class="accordion-navigation">
+    <a href="#pagination-basic"><h4>Basic</h4></a>
+    <div id="pagination-basic" class="content">
+
+      <h5 class="subheader">Basic Pagination</h5>
+      <p>Add a <code>.pagination</code> class to a <code>ul</code> to get started, then add list items with links or buttons in them.</p>
+      <ul>
+        <li>Create arrows by adding an <code>.arrow</code> class to the first and last list items.</li>
+        <li>To mark the current page, add a <code>.current</code> class to a list item.</li>
+        <li>Add a class of <code>.unavailable</code> to a list item to make it not clickable, like for the ellipsis in the middle.</li>
+      </ul>
+      <div class="row">
+        <div class="large-6 columns">
+          <h6 class="subheader">HTML</h6>
+          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pagination"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"arrow unavailable"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;laquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"current"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"unavailable"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;hellip;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>12<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>13<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;raquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+        </div>
+        <div class="large-6 columns">
+          <h6 class="subheader">Rendered HTML</h6>
+          <ul class="pagination">
+            <li class="arrow unavailable"><a href="">«</a></li>
+            <li class="current"><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li class="unavailable"><a href="">…</a></li>
+            <li><a href="">12</a></li>
+            <li><a href="">13</a></li>
+            <li class="arrow"><a href="">»</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#pagination-advanced"><h4>Advanced</h4></a>
+    <div id="pagination-advanced" class="content">
+
+      <h5 class="subheader">Advanced Pagination</h5>
+      <p>Wrap your ul.pagination with an element that has the .pagination-centered class to center your pagination.</p>
+      <div class="row">
+        <div class="large-6 columns">
+          <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"pagination-centered"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pagination"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"arrow unavailable"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;laquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"current"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"unavailable"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;hellip;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>12<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>13<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;raquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+        </div>
+        <div class="large-6 columns">
+          <h6 class="subheader">Rendered HTML</h6>
+          <div class="pagination-centered">
+            <ul class="pagination">
+              <li class="arrow unavailable"><a href="">«</a></li>
+              <li class="current"><a href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li class="unavailable"><a href="">…</a></li>
+              <li><a href="">12</a></li>
+              <li><a href="">13</a></li>
+              <li class="arrow"><a href="">»</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#pagination-accessibility"><h4>Accessibility</h4></a>
+    <div id="pagination-accessibility" class="content">
+
+      <h5 class="subheader">Accessible Pagination</h5>
+      <p>Use this snippet to make Pagination more accessible. Adding the role attribute gives context to a screen reader. The <code>aria-label</code> attribute will allow a screen reader to call out what the component is to the user. Using the Tab button, a user can navigate until they've reached the link below. (Use Shift+Tab to navigate back one step.)</p>
+      <p>If you are using an <code>unavailable</code> link, give it an aria-disabled attribute as in this example:</p>
+      <div class="row">
+        <div class="large-6 columns">
+          <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pagination"</span> <span class="attribute">role</span>=<span class="value">"menubar"</span> <span class="attribute">aria-label</span>=<span class="value">"Pagination"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"arrow unavailable"</span> <span class="attribute">aria-disabled</span>=<span class="value">"true"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;laquo; Previous<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"current"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"unavailable"</span> <span class="attribute">aria-disabled</span>=<span class="value">"true"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>&amp;hellip;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>12<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>13<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>Next &amp;raquo;<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+        </div>
+        <div class="large-6 columns">
+          <h6 class="subheader">Rendered HTML</h6>
+          <ul class="pagination" role="menubar" aria-label="Pagination">
+            <li class="arrow unavailable" aria-disabled="true"><a href="">« Previous</a></li>
+            <li class="current"><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li class="unavailable" aria-disabled="true"><a href="">…</a></li>
+            <li><a href="">12</a></li>
+            <li><a href="">13</a></li>
+            <li class="arrow"><a href="">Next »</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#pagination-customization"><h4>Customization</h4></a>
+    <div id="pagination-customization" class="content">
+
+      <h5 class="subheader">Customizing Pagination</h5>
+      <p>Pagination styles can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+      <h6 class="subheader">SCSS</h6>
+      <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">nav</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use these to control the pagination container</span>
+$pagination-<span class="attribute">height</span><span class="value">: rem-calc(<span class="number">24</span>);</span>
+$pagination-<span class="attribute">margin</span><span class="value">: rem-calc(-<span class="number">5</span>);</span>
+
+<span class="comment">// We use these to set the list-item properties</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">float</span><span class="value">: $default-float;</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">height</span><span class="value">: rem-calc(<span class="number">24</span>);</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#222</span>;</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">margin</span><span class="value">: rem-calc(<span class="number">5</span>);</span>
+
+<span class="comment">// We use these for the pagination anchor links</span>
+$pagination-<span class="tag">link</span>-pad<span class="value">: rem-calc(<span class="number">1</span> <span class="number">7</span> <span class="number">1</span>);</span>
+$pagination-<span class="tag">link</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#999</span>;</span>
+$pagination-<span class="tag">link</span>-active-bg<span class="value">: scale-color(<span class="hexcolor">#fff</span>, $lightness: -<span class="number">10</span>%);</span>
+
+<span class="comment">// We use these for disabled anchor links</span>
+$pagination-<span class="tag">link</span>-unavailable-<span class="attribute">cursor</span><span class="value">: default;</span>
+$pagination-<span class="tag">link</span>-unavailable-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#999</span>;</span>
+$pagination-<span class="tag">link</span>-unavailable-bg-active<span class="value">: transparent;</span>
+
+<span class="comment">// We use these for currently selected anchor links</span>
+$pagination-<span class="tag">link</span>-current-<span class="attribute">background</span><span class="value">: $primary-color;</span>
+$pagination-<span class="tag">link</span>-current-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+$pagination-<span class="tag">link</span>-current-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$pagination-<span class="tag">link</span>-current-<span class="attribute">cursor</span><span class="value">: default;</span>
+$pagination-<span class="tag">link</span>-current-active-bg<span class="value">: $primary-color;</span></div></code></pre>
+
+      <hr />
+    </div>
+  </li>
+
+</ul>
+
+<hr />

@@ -22,8 +22,8 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          partials: ['src/partials/*.html'],
-          helpers: ['src/helpers/*.js'],
+          partials: ['src/partials/**/*.html'],
+          helpers: ['src/helpers/**/*.js'],
           layout: 'src/layouts/default.html'
         },
         expand: true,
@@ -36,9 +36,9 @@ module.exports = function(grunt) {
     compass: {
       options: {
         importPath: ['bower_components/foundation/scss']
-      },                  
-      dist: {                   
-        options: {              
+      },
+      dist: {
+        options: {
           sassDir: ['src/assets/scss/'],
           cssDir: ['dist/assets/css/'],
           environment: 'development',
@@ -67,9 +67,9 @@ module.exports = function(grunt) {
     clean: ['dist/'],
 
     watch: {
-      grunt: { 
+      grunt: {
         files: ['Gruntfile.js'],
-        tasks: ['build'] 
+        tasks: ['build']
       },
 
       compass: {

@@ -43,8 +43,9 @@ This will assemble all the pages and compile the Sass. You're set!
 
 * `src`: This is the directory you'll work in.
 * `src/assets`: All assets (scss, images, fonts, js, etc) go here.
-* `src/assets/scss/_settings.scss`: Foundation configuration settings go in here
-* `src/assets/scss/app.scss`: Application styles go here
+* `src/assets/scss/_settings.scss`: Foundation configuration settings go in here.
+* `src/assets/scss/sandbox.scss`: Styles that make the sandbox look good go here.
+* `src/assets/scss/app.scss`: Application styles go here. These are the ones you'll want to take home with you.
 * `dist`: Static pages are assembled here. This is where you should view the site in your browser. **Don't edit these files directly. They will be overwritten!**
 * `pages`: This is where your Assemble HTML templates go.
 * `pages/index.html`: This is the landing page for your site, already kitted out with every Foundation component.
