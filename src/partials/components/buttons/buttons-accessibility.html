@@ -1,0 +1,25 @@
+<section id="buttons-accessibility" class="content">
+
+  <h4 class="subheader">Accessible Buttons</h4>
+  <p>Use the snippet below to make buttons more accessible. You can use an <code>aria-label="submit form"</code> attribute to give a screen reader the literal purpose of the button if there is no text in it. If there is no <code>&lt;a href=""&gt;</code> then simply add the <code>tabindex="0"</code> to the div or span to make it focusable.</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Rendered HTML</h6>
+      <a role="button" href="#" class="button">Default Button</a>
+      <a role="button" aria-label="submit form" href="#" class="button">Submit</a>
+      <div role="button" tabindex="0" class="button">Default Button</div>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"button"</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"button"</span> <span class="attribute">aria-label</span>=<span class="value">"submit form"</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Submit<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">role</span>=<span class="value">"button"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+    </div>
+  </div>
+
+</section>

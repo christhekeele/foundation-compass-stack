@@ -1,0 +1,48 @@
+<section id="tables-customization" class="content">
+
+  <h4 class="subheader">Customizing Tables</h4>
+  <p>Tables can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+  
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">table</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// These control the background color for the table and even rows</span>
+$<span class="tag">table</span>-bg<span class="value">: $white;</span>
+$<span class="tag">table</span>-even-row-bg<span class="value">: $snow;</span>
+
+<span class="comment">// These control the table cell border style</span>
+$<span class="tag">table</span>-<span class="attribute">border-style</span><span class="value">: solid;</span>
+$<span class="tag">table</span>-<span class="attribute">border</span>-size<span class="value">: <span class="number">1</span>px;</span>
+$<span class="tag">table</span>-<span class="attribute">border-color</span><span class="value">: $gainsboro;</span>
+
+<span class="comment">// These control the table head styles</span>
+$<span class="tag">table</span>-<span class="tag">head</span>-bg<span class="value">: $white-smoke;</span>
+$<span class="tag">table</span>-<span class="tag">head</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$<span class="tag">table</span>-<span class="tag">head</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $jet;</span>
+$<span class="tag">table</span>-<span class="tag">head</span>-<span class="attribute">font-weight</span><span class="value">: $font-weight-bold;</span>
+$<span class="tag">table</span>-<span class="tag">head</span>-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">8</span> <span class="number">10</span> <span class="number">10</span>);</span>
+
+<span class="comment">// These control the table foot styles</span>
+$<span class="tag">table</span>-foot-bg<span class="value">: $table-head-bg;</span>
+$<span class="tag">table</span>-foot-<span class="attribute">font-size</span><span class="value">: $table-head-font-size;</span>
+$<span class="tag">table</span>-foot-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $table-head-font-color;</span>
+$<span class="tag">table</span>-foot-<span class="attribute">font-weight</span><span class="value">: $table-head-font-weight;</span>
+$<span class="tag">table</span>-foot-<span class="attribute">padding</span><span class="value">: $table-head-padding;</span>
+
+<span class="comment">// These control the caption</span>
+$<span class="tag">table</span>-<span class="tag">caption</span>-bg<span class="value">: transparent;</span>
+$<span class="tag">table</span>-<span class="tag">caption</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $table-head-font-color;</span>
+$<span class="tag">table</span>-<span class="tag">caption</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">16</span>);</span>
+$<span class="tag">table</span>-<span class="tag">caption</span>-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+
+<span class="comment">// These control the row padding and font styles</span>
+$<span class="tag">table</span>-row-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">9</span> <span class="number">10</span>);</span>
+$<span class="tag">table</span>-row-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$<span class="tag">table</span>-row-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $jet;</span>
+$<span class="tag">table</span>-<span class="attribute">line-height</span><span class="value">: rem-calc(<span class="number">18</span>);</span>
+
+<span class="comment">// These are for controlling the display and margin of tables</span>
+$<span class="tag">table</span>-<span class="attribute">display</span><span class="value">: table-cell;</span>
+$<span class="tag">table</span>-<span class="attribute">margin-bottom</span><span class="value">: rem-calc(<span class="number">20</span>);</span></div></code></pre>
+
+</section>

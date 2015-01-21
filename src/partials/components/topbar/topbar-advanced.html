@@ -1,0 +1,245 @@
+<section id="topbar-advanced" class="content">
+
+  <h4 class="subheader">Advanced Top Bars</h4>
+  <p>You can modify many properties of the top bar.</p>
+
+  <br />
+
+  <h5>Clickable Top Bars</h5>
+  <p>You can now make the top bar clickable by adding a data-attribute to the nav element. Here's an example:</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+  <div class="row">
+    <div class="large-12 columns">
+
+      <nav class="top-bar" data-topbar="" role="navigation" data-options="is_hover: false">
+
+        <ul class="title-area">
+          <!-- Title Area -->
+          <li class="name">
+            <h1><a href="#">Clickable Top Bar</a></h1>
+          </li>
+          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+
+          <!-- Right Nav Section -->
+
+          <ul class="right">
+
+            <li class="divider hide-for-small"></li>
+
+            <li class="has-dropdown"><a href="#">Main Item 1</a>
+              <ul class="dropdown">
+
+                <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+
+                <li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="#">Main Item 1</a></li>
+
+                <li><label>Dropdown Level 1 Label</label></li>
+
+                <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+                  <ul class="dropdown">
+
+                    <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+
+                    <li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="#">Dropdown Level 1a</a></li>
+
+                    <li><a href="#">Dropdown Level 2a</a></li>
+
+                    <li><a href="#">Dropdown Level 2b</a></li>
+
+                    <li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
+                      <ul class="dropdown">
+
+                        <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+
+                        <li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="#">Dropdown Level 2c</a></li>
+
+                        <li><a href="#">Dropdown Level 3a</a></li>
+
+                        <li><a href="#">Dropdown Level 3b</a></li>
+
+                        <li><a href="#">Dropdown Level 3c</a></li>
+                      </ul>
+
+                    </li>
+
+                    <li><a href="#">Dropdown Level 2d</a></li>
+
+                    <li><a href="#">Dropdown Level 2e</a></li>
+
+                    <li><a href="#">Dropdown Level 2f</a></li>
+                  </ul>
+
+                </li>
+
+                <li><a href="#">Dropdown Level 1b</a></li>
+
+                <li><a href="#">Dropdown Level 1c</a></li>
+
+                <li class="divider"></li>
+
+                <li><label>Dropdown Level 1 Label</label></li>
+
+                <li><a href="#">Dropdown Level 1d</a></li>
+
+                <li><a href="#">Dropdown Level 1e</a></li>
+
+                <li><a href="#">Dropdown Level 1f</a></li>
+
+                <li class="divider"></li>
+
+                <li><a href="#">See all →</a></li>
+              </ul>
+
+            </li>
+          </ul>
+
+        </section>
+
+      </nav>
+
+    </div>
+  </div>
+
+  <br />
+
+  <h6 class="subheader">HTML</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"top-bar"</span> <span class="attribute">data-topbar</span> <span class="attribute">role</span>=<span class="value">"navigation"</span> <span class="attribute">data-options</span>=<span class="value">"is_hover: false"</span>&gt;</span></div></code></pre>
+
+  <br />
+
+  <h5>Mobile Parent Links</h5>
+  <p>Foundation will show the parent link on mobile navigation. A helpful way for mobile users navigate your site. Don't want them? Simply change the settings in the topbar.js file.</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+  <div class="row">
+    <div class="large-12 columns">
+
+      <nav class="top-bar" data-topbar="" role="navigation">
+
+        <ul class="title-area">
+          <!-- Title Area -->
+          <li class="name">
+            <h1><a href="#">Mobile Parent Links</a></h1>
+          </li>
+          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+
+          <!-- Left Nav Section -->
+
+          <ul class="left">
+
+            <li class="has-dropdown not-click"><a href="http://foundation.zurb.com/docs/components/topbar.html">Item 1</a>
+              <ul class="dropdown">
+
+                <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+
+                <li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="http://foundation.zurb.com/docs/components/topbar.html">Item 1</a></li>
+
+                <li><label>Level One</label></li>
+
+                <li><a href="#">Sub-item 1</a></li>
+
+                <li><a href="#">Sub-item 2</a></li>
+
+                <li class="divider"></li>
+
+                <li><a href="#">Sub-item 3</a></li>
+
+                <li class="has-dropdown not-click"><a href="http://foundation.zurb.com/docs/components/topbar.html">Sub-item 4</a>
+                  <ul class="dropdown">
+
+                    <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+
+                    <li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="http://foundation.zurb.com/docs/components/topbar.html">Sub-item 4</a></li>
+
+                    <li><label>Level Two</label></li>
+
+                    <li class="has-dropdown not-click"><a href="http://foundation.zurb.com/docs/components/topbar.html">Sub-item 1</a>
+                      <ul class="dropdown">
+
+                        <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+
+                        <li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="http://foundation.zurb.com/docs/components/topbar.html">Sub-item 1</a></li>
+
+                        <li><label>Level Three</label></li>
+
+                        <li class="has-dropdown not-click"><a href="http://foundation.zurb.com/docs/components/topbar.html">Sub-item 1</a>
+                          <ul class="dropdown">
+
+                            <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+
+                            <li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="http://foundation.zurb.com/docs/components/topbar.html">Sub-item 1</a></li>
+
+                            <li><label>Level Four</label></li>
+
+                            <li><a href="#">Sub-item 1</a></li>
+                          </ul>
+
+                        </li>
+
+                        <li><a href="#">Sub-item 2</a></li>
+
+                        <li><a href="#">Sub-item 3</a></li>
+
+                        <li class="divider"></li>
+
+                        <li><a href="#">Sub-item 4</a></li>
+                      </ul>
+
+                    </li>
+
+                    <li><a href="#">Sub-item 2</a></li>
+
+                    <li><a href="#">Sub-item 3</a></li>
+
+                    <li><a href="#">Sub-item 4</a>
+
+                    </li>
+                  </ul>
+
+                </li>
+
+                <li><a href="#">Sub-item 5</a></li>
+              </ul>
+
+            </li>
+
+            <li class="divider"></li>
+          </ul>
+
+          <!-- Right Nav Section -->
+
+          <ul class="right">
+            <li class="divider"></li>
+            <li><a href="#">Item 2</a></li>
+          </ul>
+
+        </section>
+
+      </nav>
+
+    </div>
+  </div>
+
+  <br />
+
+  <h5>Titleless Top Bars</h5>
+  <p>If you want a bar that doesn't include a title, just take out the content within the list item, like so:</p>
+
+  <h6 class="subheader">HTML</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"top-bar"</span> <span class="attribute">data-topbar</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"title-area"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span><span class="comment">&lt;!-- Leave this empty --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    ...
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span></div></code></pre>
+
+</section>

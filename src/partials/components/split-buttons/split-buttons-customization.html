@@ -1,0 +1,43 @@
+<section id="split-buttons-customization" class="content">
+
+  <h4 class="subheader">Customizing Split Buttons</h4>
+  <p>Split buttons can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+  
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">button</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">/* We use these to control different shared styles for Split Buttons */</span>
+$split-<span class="tag">button</span>-function-factor<span class="value">: <span class="number">15</span>%;</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">color</span>-alt<span class="value">: <span class="hexcolor">#333</span>;</span>
+$split-<span class="tag">button</span>-active-bg-tint<span class="value">: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>);</span>
+
+<span class="comment">/* We use these to control tiny split buttons */</span>
+$split-<span class="tag">button</span>-<span class="attribute">padding</span>-tny<span class="value">: $button-tny * <span class="number">9</span>;</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">width</span>-tny<span class="value">: $button-tny * <span class="number">6.5</span>;</span>
+$split-<span class="tag">button</span>-pip-size-tny<span class="value">: $button-tny;</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">top</span>-tny<span class="value">: $button-tny * <span class="number">2</span>;</span>
+$split-<span class="tag">button</span>-pip-<span class="value">default</span>-<span class="attribute">float</span>-tny<span class="value">: rem-calc(-<span class="number">5</span>);</span>
+
+<span class="comment">/* We use these to control small split buttons */</span>
+$split-<span class="tag">button</span>-<span class="attribute">padding</span>-sml<span class="value">: $button-sml * <span class="number">7</span>;</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">width</span>-sml<span class="value">: $button-sml * <span class="number">5</span>;</span>
+$split-<span class="tag">button</span>-pip-size-sml<span class="value">: $button-sml;</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">top</span>-sml<span class="value">: $button-sml * <span class="number">1.5</span>;</span>
+$split-<span class="tag">button</span>-pip-<span class="value">default</span>-<span class="attribute">float</span>-sml<span class="value">: rem-calc(-<span class="number">9</span>);</span>
+
+<span class="comment">/* We use these to control medium split buttons */</span>
+$split-<span class="tag">button</span>-<span class="attribute">padding</span>-med<span class="value">: $button-med * <span class="number">6.4</span>;</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">width</span>-med<span class="value">: $button-med * <span class="number">4</span>;</span>
+$split-<span class="tag">button</span>-pip-size-med<span class="value">: $button-med - rem-calc(<span class="number">3</span>);</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">top</span>-med<span class="value">: $button-med * <span class="number">1.5</span>;</span>
+$split-<span class="tag">button</span>-pip-<span class="value">default</span>-<span class="attribute">float</span>-med<span class="value">: rem-calc(-<span class="number">9</span>);</span>
+
+<span class="comment">/* We use these to control large split buttons */</span>
+$split-<span class="tag">button</span>-<span class="attribute">padding</span>-lrg<span class="value">: $button-lrg * <span class="number">6</span>;</span>
+$split-<span class="tag">button</span>-<span class="tag">span</span>-<span class="attribute">width</span>-lrg<span class="value">: $button-lrg * <span class="number">3.75</span>;</span>
+$split-<span class="tag">button</span>-pip-size-lrg<span class="value">: $button-lrg - rem-calc(<span class="number">6</span>);</span>
+$split-<span class="tag">button</span>-pip-<span class="attribute">top</span>-lrg<span class="value">: $button-lrg + rem-calc(<span class="number">5</span>);</span>
+$split-<span class="tag">button</span>-pip-<span class="value">default</span>-<span class="attribute">float</span>-lrg<span class="value">: rem-calc(-<span class="number">9</span>);</span></div></code></pre>
+
+</section>

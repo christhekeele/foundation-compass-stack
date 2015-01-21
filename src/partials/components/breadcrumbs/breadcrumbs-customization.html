@@ -1,0 +1,38 @@
+<section id="breadcrumbs-customization" class="content">
+
+  <h4 class="subheader">Customizing Breadcrumbs</h4>
+  <p>Breadcrumbs can be easily customized using our Sass variables.</p>
+  
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container"><span class="comment">//</span>
+<span class="comment">// Breadcrumb Variables</span>
+<span class="comment">//</span>
+$include-<span class="tag">html</span>-<span class="tag">nav</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use this to set the background color for the breadcrumb container.</span>
+$crumb-bg<span class="value">: scale-color($secondary-color, $lightness: <span class="number">55</span>%);</span>
+
+<span class="comment">// We use these to set the padding around the breadcrumbs.</span>
+$crumb-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">9</span> <span class="number">14</span> <span class="number">9</span>);</span>
+$crumb-side-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">12</span>);</span>
+
+<span class="comment">// We use these to control border styles.</span>
+$crumb-function-factor<span class="value">: -<span class="number">10</span>%;</span>
+$crumb-<span class="attribute">border</span>-size<span class="value">: <span class="number">1</span>px;</span>
+$crumb-<span class="attribute">border-style</span><span class="value">: solid;</span>
+$crumb-<span class="attribute">border-color</span><span class="value">: scale-color($crumb-bg, $lightness: $crumb-function-factor);</span>
+$crumb-radius<span class="value">: $global-radius;</span>
+
+<span class="comment">// We use these to set various text styles for breadcrumbs.</span>
+$crumb-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">11</span>);</span>
+$crumb-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $primary-color;</span>
+$crumb-<span class="attribute">font</span>-<span class="attribute">color</span>-current<span class="value">: $oil;</span>
+$crumb-<span class="attribute">font</span>-<span class="attribute">color</span>-unavailable<span class="value">: $aluminum;</span>
+$crumb-<span class="attribute">font</span>-<span class="attribute">transform</span><span class="value">: uppercase;</span>
+$crumb-<span class="tag">link</span>-decor<span class="value">: underline;</span>
+
+<span class="comment">// We use these to control the slash between breadcrumbs</span>
+$crumb-slash-<span class="attribute">color</span><span class="value">: $base;</span>
+$crumb-slash<span class="value">: <span class="string">"/"</span>;</span></div></code></pre>
+
+</section>

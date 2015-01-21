@@ -1,0 +1,42 @@
+<section id="topbar-positioning" class="content">
+
+  <h4 class="subheader">Positioning Top Bars</h4>
+  <p>The top bar is built with a single <code>nav</code> element with a class of <code>top-bar</code>. It will take on full-browser width by default. To make the top bar stay fixed as you scroll, wrap it in <code>div class="fixed"</code>. If you want your navigation to be set to your grid width, wrap it in <code>div class="contain-to-grid"</code>. You may use <code>fixed</code> and <code>contain-to-grid</code> together in the wrapping div (<code>div class="contain-to-grid fixed</code>).</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Fixed Navigation</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"fixed"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"top-bar"</span> <span class="attribute">data-topbar</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span>
+...
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+  </div>
+  <div class="large-6 columns">
+
+    <h6 class="subheader">Contain to Grid</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"contain-to-grid"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"top-bar"</span> <span class="attribute">data-topbar</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span>
+...
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+    </div>
+  </div>
+
+  <br />
+
+  <h5>Sticky Top Bars</h5>
+
+  <p>You may also wrap your top bar in <code>div class="sticky"</code> and put it anywhere within your markup. When the navigation hits the top of the browser, it will act like the fixed top bar and stick to the top as users continue to scroll. <strong>Note:</strong> If you are using SCSS, you can control the default <code>sticky</code> class by adjusting the <code>$topbar-sticky-class</code> variable. <strong>Make sure the JS variable for <code>sticky_class</code> matches whatever class you use in the variable.</strong></p>
+  <p>You can also add <code>sticky_on</code> to your <code>data-options</code> attribute to allow your sticky bar to work on <code>small</code>, <code>medium</code>, or <code>large</code> when the page loads. This works in conjunction with the sticky class wrapper to target sticky for small, medium, or large. It will be sticky on all screen sizes by default.</p>
+  
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"contain-to-grid sticky"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"top-bar"</span> <span class="attribute">data-topbar</span> <span class="attribute">role</span>=<span class="value">"navigation"</span> <span class="attribute">data-options</span>=<span class="value">"sticky_on: large"</span>&gt;</span>
+    ...
+  <span class="tag">&lt;/<span class="title">nav</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+</section>

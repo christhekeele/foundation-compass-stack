@@ -1,0 +1,111 @@
+<section id="accordion-distributed" class="content">
+
+  <h4 class="subheader">Distributed Accordion Groups</h4>
+  <p>You can name the accordion so that it can be spread across different parent containers.  In this example the accordion is named <em>myAccordionGroup</em> and it is split between different columns in a block grid.  This allows the accordion to be responsive to screen width.</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Rendered HTML</h6>
+      <ul class="small-block-grid-1 medium-block-grid-3">
+        <li>
+          <ul class="accordion" data-accordion="myAccordionGroup">
+            <li class="accordion-navigation">
+              <a href="#panel1c">Accordion 1</a>
+              <div id="panel1c" class="content">
+                Panel 1. Lorem ipsum dolor
+              </div>
+            </li>
+            <li class="accordion-navigation">
+              <a href="#panel2c">Accordion 2</a>
+              <div id="panel2c" class="content">
+                Panel 2. Lorem ipsum dolor
+              </div>
+            </li>
+            <li class="accordion-navigation">
+              <a href="#panel3c">Accordion 3</a>
+              <div id="panel3c" class="content">
+                Panel 3. Lorem ipsum dolor
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="accordion" data-accordion="myAccordionGroup">
+            <li class="accordion-navigation">
+              <a href="#panel4c">Accordion 4</a>
+              <div id="panel4c" class="content">
+                Panel 4. Lorem ipsum dolor
+              </div>
+            </li>
+            <li class="accordion-navigation">
+              <a href="#panel5c">Accordion 5</a>
+              <div id="panel5c" class="content">
+                Panel 5. Lorem ipsum dolor
+              </div>
+            </li>
+            <li class="accordion-navigation">
+              <a href="#panel6c">Accordion 6</a>
+              <div id="panel6c" class="content">
+                Panel 6. Lorem ipsum dolor
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"small-block-grid-1 medium-block-grid-3"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"accordion"</span> <span class="attribute">data-accordion</span>=<span class="value">"myAccordionGroup"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel1c"</span>&gt;</span>Accordion 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel1c"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+          Panel 1. Lorem ipsum dolor
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2c"</span>&gt;</span>Accordion 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel2c"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+          Panel 2. Lorem ipsum dolor
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel3c"</span>&gt;</span>Accordion 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel3c"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+          Panel 3. Lorem ipsum dolor
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"accordion"</span> <span class="attribute">data-accordion</span>=<span class="value">"myAccordionGroup"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel4c"</span>&gt;</span>Accordion 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel4c"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+          Panel 4. Lorem ipsum dolor
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel5c"</span>&gt;</span>Accordion 5<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel5c"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+          Panel 5. Lorem ipsum dolor
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel6c"</span>&gt;</span>Accordion 6<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel6c"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+          Panel 6. Lorem ipsum dolor
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+
+    </div>
+  </div>
+
+</section>

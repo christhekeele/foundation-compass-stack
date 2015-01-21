@@ -1,0 +1,52 @@
+<section id="tabs-vertical" class="content">
+
+  <h4 class="subheader">Vertical Tabs</h4>
+  <p>You can create a group of vertical tabs using minimal markup. Just adding the class <code>vertical</code> changes the orientation of horizontal tabs.</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+  <dl class="tabs vertical" data-tab="">
+    <dd class="active"><a href="#tab1">Tab 1</a></dd>
+    <dd><a href="#tab2">Tab 2</a></dd>
+    <dd><a href="#tab3">Tab 3</a></dd>
+    <dd><a href="#tab4">Tab 4</a></dd>
+  </dl>
+  <div class="tabs-content">
+    <div class="content active" id="tab1">
+      <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, pariatur accusantium magni cumque vel voluptates illum repellendus sed dignissimos magnam! Deleniti, fugit tempore quibusdam molestias iusto asperiores incidunt sint nemo?</p>
+    </div>
+    <div class="content" id="tab2">
+      <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, pariatur accusantium magni cumque vel voluptates illum repellendus sed dignissimos magnam! Deleniti, fugit tempore quibusdam molestias iusto asperiores incidunt sint nemo?</p>
+    </div>
+    <div class="content" id="tab3">
+      <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, pariatur accusantium magni cumque vel voluptates illum repellendus sed dignissimos magnam! Deleniti, fugit tempore quibusdam molestias iusto asperiores incidunt sint nemo?</p>
+    </div>
+    <div class="content" id="tab4">
+      <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, pariatur accusantium magni cumque vel voluptates illum repellendus sed dignissimos magnam! Deleniti, fugit tempore quibusdam molestias iusto asperiores incidunt sint nemo?</p>
+    </div>
+  </div>
+
+  <br />
+  
+  <h6 class="subheader">HTML</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">dl</span> <span class="attribute">class</span>=<span class="value">"tabs vertical"</span> <span class="attribute">data-tab</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel1"</span>&gt;</span>Tab 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2"</span>&gt;</span>Tab 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel3"</span>&gt;</span>Tab 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel4"</span>&gt;</span>Tab 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">dl</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"tabs-content vertical"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content active"</span> <span class="attribute">id</span>=<span class="value">"panel1"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the first panel of the basic tab example. This is the first panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel2"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the second panel of the basic tab example. This is the second panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel3"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the third panel of the basic tab example. This is the third panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel4"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+</section>

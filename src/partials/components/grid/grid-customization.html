@@ -1,0 +1,73 @@
+<section id="grid-customization" class="content">
+
+  <h4 class="subheader">Grid Customization</h4>
+  <p>Customizing the grid is easy with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$row-<span class="attribute">width</span><span class="value">: rem-calc(<span class="number">1000</span>);</span>
+$column-gutter<span class="value">: rem-calc(<span class="number">30</span>);</span>
+$total-<span class="attribute">columns</span><span class="value">: <span class="number">12</span> ;</span></div></code></pre>
+
+  <br />
+
+  <h5>Basic</h5>
+  <p>You can use the <code>grid-row()</code> and <code>grid-column()</code> mixins to create your own rows and columns with semantic markup, like so:</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">SCSS</h6>
+      <pre><code class="language-scss"><div class="code-container"><span class="class">.custom-row-class</span> {
+<span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-row</span>();</span>
+<span class="class">.custom-column-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-column</span>(<span class="number">12</span>);</span>
+}
+}</div></code></pre>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"your-row-class-name"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"your-column-class-name"</span>&gt;</span>
+  <span class="comment">&lt;!-- Your content goes here --&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+    </div>
+  </div>
+
+  <br />
+
+  <h5>Advanced</h5>
+  <p>You can further customize your grid columns using the provided options in the <code>grid-column()</code> mixin:</p>
+
+  <h6 class="subheader">Row Mixin Options</h6>
+  <pre><code class="language-scss"><div class="code-container"><span class="class">.your-class-name</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-row</span>($behavior:<span class="preprocessor"> nest</span>) //<span class="preprocessor"> Other</span><span class="preprocessor"> options</span><span class="preprocessor"> include</span><span class="preprocessor"> collapse</span><span class="preprocessor"> and</span><span class="preprocessor"> nest-collapse.</span>
+  //<span class="preprocessor"> Default</span> $behavior<span class="preprocessor"> value</span><span class="preprocessor"> is</span><span class="preprocessor"> false</span>
+}</span></div></code></pre>
+
+  <h6 class="subheader">Column Mixin Options</hb>
+  <pre><code class="language-scss"><div class="code-container"><span class="class">.custom-grid-class</span> {
+  <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-column</span>(
+    //<span class="preprocessor"> Control</span><span class="preprocessor"> the</span><span class="preprocessor"> number</span><span class="preprocessor"> of</span><span class="preprocessor"> columns</span>
+    $columns:<span class="number">4</span>,
+    //<span class="preprocessor"> Specify</span><span class="preprocessor"> whether</span><span class="preprocessor"> or</span><span class="preprocessor"> not</span><span class="preprocessor"> this</span><span class="preprocessor"> is</span><span class="preprocessor"> the</span><span class="preprocessor"> last</span><span class="preprocessor"> column</span><span class="preprocessor"> in</span><span class="preprocessor"> the</span><span class="preprocessor"> row</span>
+    $last-column:true,
+    //<span class="preprocessor"> Choose</span><span class="preprocessor"> whether</span><span class="preprocessor"> or</span><span class="preprocessor"> not</span><span class="preprocessor"> to</span><span class="preprocessor"> center</span><span class="preprocessor"> this</span><span class="preprocessor"> column</span>
+    $center:true,
+    //<span class="preprocessor"> Choose</span><span class="preprocessor"> the</span><span class="preprocessor"> number</span><span class="preprocessor"> of</span><span class="preprocessor"> columns</span><span class="preprocessor"> to</span><span class="preprocessor"> offset</span><span class="preprocessor"> this</span><span class="preprocessor"> element</span><span class="preprocessor"> by</span>
+    $offset:<span class="number">3</span>,
+    //<span class="preprocessor"> Specify</span><span class="preprocessor"> how</span><span class="preprocessor"> many</span><span class="preprocessor"> columns</span><span class="preprocessor"> to</span><span class="preprocessor"> push</span><span class="preprocessor"> this</span><span class="preprocessor"> element</span><span class="preprocessor"> past</span>
+    $push:<span class="number">3</span>,
+    //<span class="preprocessor"> Specify</span><span class="preprocessor"> how</span><span class="preprocessor"> many</span><span class="preprocessor"> columns</span><span class="preprocessor"> to</span><span class="preprocessor"> pull</span><span class="preprocessor"> this</span><span class="preprocessor"> element</span><span class="preprocessor"> past</span>
+    $pull:<span class="number">9</span>,
+    //<span class="preprocessor"> Set</span><span class="preprocessor"> to</span><span class="preprocessor"> true</span><span class="preprocessor"> to</span><span class="preprocessor"> remove</span><span class="preprocessor"> column</span><span class="preprocessor"> padding</span>
+    $collapse:true,
+    //<span class="preprocessor"> Specify</span><span class="preprocessor"> the</span><span class="preprocessor"> float</span><span class="preprocessor"> direction</span>
+    $float:right
+  );</span>
+}</div></code></pre>
+
+</section>

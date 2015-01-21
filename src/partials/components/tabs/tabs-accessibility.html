@@ -1,0 +1,59 @@
+<section id="tabs-accessibility" class="content">
+
+  <h4 class="subheader">Accessible Tabs</h4>
+  <p>You can make tabs more accessible by using the code snippet below. The tabs are keyboard accessible meaning that a user can use the tab key or arrow keys to navigate through them. The role of <code>tablist</code> tells a screen reader what the element is and reads the necessary content.</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Rendered HTML</h6>
+      <ul class="tabs" data-tab="" role="tablist">
+        <li class="tab-title active" role="presentational"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Tab 1</a></li>
+        <li class="tab-title" role="presentational"><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" controls="panel2-2">Tab 2</a></li>
+        <li class="tab-title" role="presentational"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3">Tab 3</a></li>
+        <li class="tab-title" role="presentational"><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" controls="panel2-4">Tab 4</a></li>
+      </ul>
+      <div class="tabs-content">
+        <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+          <h2>First panel content goes here...</h2>
+        </section>
+        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+          <h2>Second panel content goes here...</h2>
+        </section>
+        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
+          <h2>Third panel content goes here...</h2>
+        </section>
+        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
+          <h2>Fourth panel content goes here...</h2>
+        </section>
+      </div>
+
+    </div>
+    <div class="large-6 columns">
+      
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"tabs"</span> <span class="attribute">data-tab</span> <span class="attribute">role</span>=<span class="value">"tablist"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"tab-title active"</span> <span class="attribute">role</span>=<span class="value">"presentational"</span> &gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2-1"</span> <span class="attribute">role</span>=<span class="value">"tab"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span> <span class="attribute">aria-selected</span>=<span class="value">"true"</span> <span class="attribute">controls</span>=<span class="value">"panel2-1"</span>&gt;</span>Tab 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"tab-title"</span> <span class="attribute">role</span>=<span class="value">"presentational"</span> &gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2-2"</span> <span class="attribute">role</span>=<span class="value">"tab"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span><span class="attribute">aria-selected</span>=<span class="value">"false"</span> <span class="attribute">controls</span>=<span class="value">"panel2-2"</span>&gt;</span>Tab 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"tab-title"</span> <span class="attribute">role</span>=<span class="value">"presentational"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2-3"</span> <span class="attribute">role</span>=<span class="value">"tab"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span> <span class="attribute">aria-selected</span>=<span class="value">"false"</span> <span class="attribute">controls</span>=<span class="value">"panel2-3"</span>&gt;</span>Tab 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"tab-title"</span> <span class="attribute">role</span>=<span class="value">"presentational"</span> &gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2-4"</span> <span class="attribute">role</span>=<span class="value">"tab"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span> <span class="attribute">aria-selected</span>=<span class="value">"false"</span> <span class="attribute">controls</span>=<span class="value">"panel2-4"</span>&gt;</span>Tab 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"tabs-content"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">section</span> <span class="attribute">role</span>=<span class="value">"tabpanel"</span> <span class="attribute">aria-hidden</span>=<span class="value">"false"</span> <span class="attribute">class</span>=<span class="value">"content active"</span> <span class="attribute">id</span>=<span class="value">"panel2-1"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>First panel content goes here...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">section</span> <span class="attribute">role</span>=<span class="value">"tabpanel"</span> <span class="attribute">aria-hidden</span>=<span class="value">"true"</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel2-2"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Second panel content goes here...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">section</span> <span class="attribute">role</span>=<span class="value">"tabpanel"</span> <span class="attribute">aria-hidden</span>=<span class="value">"true"</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel2-3"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Third panel content goes here...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">section</span> <span class="attribute">role</span>=<span class="value">"tabpanel"</span> <span class="attribute">aria-hidden</span>=<span class="value">"true"</span> <span class="attribute">class</span>=<span class="value">"content"</span> <span class="attribute">id</span>=<span class="value">"panel2-4"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Fourth panel content goes here...<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+    </div>
+  </div>
+
+</section>

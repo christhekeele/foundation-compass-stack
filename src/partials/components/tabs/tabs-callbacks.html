@@ -1,0 +1,33 @@
+<section id="tabs-callbacks" class="content">
+
+  <h4 class="subheader">Tab Callbacks</h4>
+  <p>There are two ways to bind to callbacks in your tabs.</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Callback Function</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
+$(document).foundation({
+  tab: {
+    callback : <span class="function"><span class="keyword">function</span> <span class="params">(tab)</span> {</span>
+      console.log(tab);
+    }
+  }
+});
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Toggled Event</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
+$(<span class="string">'#myTabs'</span>).on(<span class="string">'toggled'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(event, tab)</span> {</span>
+  console.log(tab);
+});
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,96 @@
+<section id="topbar-customization" class="content">
+
+  <h4 class="subheader">Customizing Top Bars</h4>
+  <p>We do include SCSS variable to help you control some of the styles for the top bar. Overall the styles are written mobile first, so they are much easier to override than the previous iteration of the top bar.</p>
+  
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container"><span class="comment">//</span>
+<span class="comment">// Top Bar Variables</span>
+<span class="comment">//</span>
+$include-<span class="tag">html</span>-<span class="attribute">top</span>-bar-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// Background color for the top bar</span>
+$topbar-bg-<span class="attribute">color</span><span class="value">: $oil;</span>
+$topbar-bg<span class="value">: $topbar-bg-color;</span>
+
+<span class="comment">// Height and margin</span>
+$topbar-<span class="attribute">height</span><span class="value">: rem-calc(<span class="number">45</span>);</span>
+$topbar-<span class="attribute">margin-bottom</span><span class="value">: <span class="number">0</span>;</span>
+
+<span class="comment">// Controlling the styles for the title in the top bar</span>
+$topbar-<span class="tag">title</span>-weight<span class="value">: $font-weight-normal;</span>
+$topbar-<span class="tag">title</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">17</span>);</span>
+
+<span class="comment">// Style the top bar dropdown elements</span>
+$topbar-dropdown-bg<span class="value">: $oil;</span>
+$topbar-dropdown-<span class="tag">link</span>-<span class="attribute">color</span><span class="value">: $white;</span>
+$topbar-dropdown-<span class="tag">link</span>-bg<span class="value">: $oil;</span>
+$topbar-dropdown-<span class="tag">link</span>-bg-hover<span class="value">: $oil;</span>
+$topbar-dropdown-<span class="tag">link</span>-weight<span class="value">: $font-weight-normal;</span>
+$topbar-dropdown-toggle-size<span class="value">: <span class="number">5</span>px;</span>
+$topbar-dropdown-toggle-<span class="attribute">color</span><span class="value">: $white;</span>
+$topbar-dropdown-toggle-alpha<span class="value">: <span class="number">0.4</span>;</span>
+
+<span class="comment">// Set the link colors and styles for top-level nav</span>
+$topbar-<span class="tag">link</span>-<span class="attribute">color</span><span class="value">: $white;</span>
+$topbar-<span class="tag">link</span>-<span class="attribute">color</span>-hover<span class="value">: $white;</span>
+$topbar-<span class="tag">link</span>-<span class="attribute">color</span>-active<span class="value">: $white;</span>
+$topbar-<span class="tag">link</span>-<span class="attribute">color</span>-active-hover<span class="value">: $white;</span>
+$topbar-<span class="tag">link</span>-weight<span class="value">: $font-weight-normal;</span>
+$topbar-<span class="tag">link</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">13</span>);</span>
+$topbar-<span class="tag">link</span>-hover-lightness<span class="value">: -<span class="number">10</span>%;</span> <span class="comment">// Darken by 10%</span>
+$topbar-<span class="tag">link</span>-bg<span class="value">: $topbar-bg;</span>
+$topbar-<span class="tag">link</span>-bg-hover<span class="value">: $oil;</span>
+$topbar-<span class="tag">link</span>-bg-<span class="attribute">color</span>-hover<span class="value">: $charcoal;</span>
+$topbar-<span class="tag">link</span>-bg-active<span class="value">: $primary-color;</span>
+$topbar-<span class="tag">link</span>-bg-active-hover<span class="value">: scale-color($primary-color, $lightness: -<span class="number">14</span>%);</span>
+$topbar-<span class="tag">link</span>-<span class="attribute">font-family</span><span class="value">: $body-font-family;</span>
+$topbar-<span class="tag">link</span>-<span class="attribute">text-transform</span><span class="value">: none;</span>
+$topbar-<span class="tag">link</span>-<span class="attribute">padding</span><span class="value">: $topbar-height / <span class="number">3</span>;</span>
+$topbar-back-<span class="tag">link</span>-size<span class="value">: $h5-font-size;</span>
+$topbar-<span class="tag">link</span>-dropdown-<span class="attribute">padding</span><span class="value">: <span class="number">20</span>px;</span>
+$topbar-<span class="tag">button</span>-<span class="attribute">font-size</span><span class="value">: <span class="number">0.75</span>rem;</span>
+$topbar-<span class="tag">button</span>-<span class="attribute">top</span><span class="value">: <span class="number">7</span>px;</span>
+
+$topbar-dropdown-<span class="tag">label</span>-<span class="attribute">color</span><span class="value">: $monsoon;</span>
+$topbar-dropdown-<span class="tag">label</span>-<span class="attribute">text-transform</span><span class="value">: uppercase;</span>
+$topbar-dropdown-<span class="tag">label</span>-<span class="attribute">font-weight</span><span class="value">: $font-weight-bold;</span>
+$topbar-dropdown-<span class="tag">label</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">10</span>);</span>
+$topbar-dropdown-<span class="tag">label</span>-bg<span class="value">: $oil;</span>
+
+<span class="comment">// Top menu icon styles</span>
+$topbar-menu-<span class="tag">link</span>-<span class="attribute">transform</span><span class="value">: uppercase;</span>
+$topbar-menu-<span class="tag">link</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">13</span>);</span>
+$topbar-menu-<span class="tag">link</span>-weight<span class="value">: $font-weight-bold;</span>
+$topbar-menu-<span class="tag">link</span>-<span class="attribute">color</span><span class="value">: $white;</span>
+$topbar-menu-<span class="attribute">icon</span>-<span class="attribute">color</span><span class="value">: $white;</span>
+$topbar-menu-<span class="tag">link</span>-<span class="attribute">color</span>-toggled<span class="value">: $jumbo;</span>
+$topbar-menu-<span class="attribute">icon</span>-<span class="attribute">color</span>-toggled<span class="value">: $jumbo;</span>
+$topbar-menu-<span class="attribute">icon</span>-<span class="attribute">position</span><span class="value">: $opposite-direction;</span> <span class="comment">// Change to $default-float for a left menu icon</span>
+
+<span class="comment">// Transitions and breakpoint styles</span>
+$topbar-<span class="attribute">transition</span>-speed<span class="value">: <span class="number">300</span>ms;</span>
+<span class="comment">// Using rem-calc for the below breakpoint causes issues with top bar</span>
+$topbar-breakpoint<span class="value">: #{lower-bound($medium-range)};</span> <span class="comment">// Change to 9999px for always mobile layout</span>
+$topbar-media-query<span class="value">: $medium-up;</span>
+
+<span class="comment">// Divider Styles</span>
+$topbar-divider-<span class="attribute">border-bottom</span><span class="value">: solid <span class="number">1</span>px scale-color($topbar-bg-color, $lightness: <span class="number">13</span>%);</span>
+$topbar-divider-<span class="attribute">border-top</span><span class="value">: solid <span class="number">1</span>px scale-color($topbar-bg-color, $lightness: -<span class="number">50</span>%);</span>
+
+<span class="comment">// Sticky Class</span>
+$topbar-sticky-class<span class="value">: <span class="string">".sticky"</span>;</span>
+$topbar-arrows<span class="value">: true;</span> <span class="comment">//Set false to remove the triangle icon from the menu item</span></div></code></pre>
+      <p><strong>Note:</strong> <code>rem-calc();</code> is a function we wrote to convert <code>px</code> to <code>rem</code>. It is included in <strong>_variables.scss</strong>.</p>
+      <h6 class="subheader">Javascript</h6>
+      <p>Top bar supports <code>data-options</code> configuration.</p>
+      <pre><code class="language-js"><div class="code-container">{
+  sticky_class : <span class="string">'sticky'</span>,
+  custom_back_text: <span class="literal">true</span>, <span class="comment">// Set this to false and it will pull the top level link name as the back text</span>
+  back_text: <span class="string">'Back'</span>, <span class="comment">// Define what you want your custom back text to be if custom_back_text: true</span>
+  is_hover: <span class="literal">true</span>,
+  mobile_show_parent_link: <span class="literal">false</span>, <span class="comment">// will copy parent links into dropdowns for mobile navigation</span>
+  scrolltop : <span class="literal">true</span> <span class="comment">// jump to top when sticky nav menu toggle is clicked</span>
+}</div></code></pre>
+
+</section>

@@ -1,0 +1,37 @@
+<section id="pagination-customization" class="content">
+
+  <h4 class="subheader">Customizing Pagination</h4>
+  <p>Pagination styles can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+  
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">nav</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use these to control the pagination container</span>
+$pagination-<span class="attribute">height</span><span class="value">: rem-calc(<span class="number">24</span>);</span>
+$pagination-<span class="attribute">margin</span><span class="value">: rem-calc(-<span class="number">5</span>);</span>
+
+<span class="comment">// We use these to set the list-item properties</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">float</span><span class="value">: $default-float;</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">height</span><span class="value">: rem-calc(<span class="number">24</span>);</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#222</span>;</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$pagination-<span class="tag">li</span>-<span class="attribute">margin</span><span class="value">: rem-calc(<span class="number">5</span>);</span>
+
+<span class="comment">// We use these for the pagination anchor links</span>
+$pagination-<span class="tag">link</span>-pad<span class="value">: rem-calc(<span class="number">1</span> <span class="number">7</span> <span class="number">1</span>);</span>
+$pagination-<span class="tag">link</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#999</span>;</span>
+$pagination-<span class="tag">link</span>-active-bg<span class="value">: scale-color(<span class="hexcolor">#fff</span>, $lightness: -<span class="number">10</span>%);</span>
+
+<span class="comment">// We use these for disabled anchor links</span>
+$pagination-<span class="tag">link</span>-unavailable-<span class="attribute">cursor</span><span class="value">: default;</span>
+$pagination-<span class="tag">link</span>-unavailable-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#999</span>;</span>
+$pagination-<span class="tag">link</span>-unavailable-bg-active<span class="value">: transparent;</span>
+
+<span class="comment">// We use these for currently selected anchor links</span>
+$pagination-<span class="tag">link</span>-current-<span class="attribute">background</span><span class="value">: $primary-color;</span>
+$pagination-<span class="tag">link</span>-current-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+$pagination-<span class="tag">link</span>-current-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$pagination-<span class="tag">link</span>-current-<span class="attribute">cursor</span><span class="value">: default;</span>
+$pagination-<span class="tag">link</span>-current-active-bg<span class="value">: $primary-color;</span></div></code></pre>
+
+</section>

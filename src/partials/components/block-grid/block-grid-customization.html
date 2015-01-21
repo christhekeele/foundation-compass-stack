@@ -1,0 +1,15 @@
+<section id="block-grid-customization" class="content">
+
+  <h4 class="subheader">Customizing Block Grids</h4>
+  <p>Block grids can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container"><span class="comment">// We use this to control the maximum blocks and spacing </span>
+$<span class="value">block</span>-grid-elements<span class="value">: <span class="number">12</span>;</span>
+$<span class="value">block</span>-grid-<span class="value">default</span>-spacing<span class="value">: rem-calc(<span class="number">20</span>);</span>
+$align-<span class="value">block</span>-grid-to-grid<span class="value">: false;</span> <span class="comment">//removes column gutter so edges of block grid align with grid</span>
+
+<span class="comment">// Enables media queries for block-grid classes. Set to false if writing semantic HTML.</span>
+$<span class="value">block</span>-grid-media-queries<span class="value">: true;</span></div></code></pre>
+
+</section>

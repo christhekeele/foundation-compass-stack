@@ -1,0 +1,77 @@
+<section id="button-groups-bars" class="content">
+
+  <h4 class="subheader">Button Bars</h4>
+  <p>A button bar is a group of button groups, perfect for situations where you want groups of actions that are all related to a similar element or page. Simply wrap two or more button groups in a <code>.button-bar</code> and Foundation takes care of the rest.</p>
+
+  <br />
+
+  <h6>Basic</h6>
+  <p>You can create a button bar using minimal markup.</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+  <div class="button-bar">
+    <ul class="button-group">
+      <li><a href="#" class="small button">Button 1</a></li>
+      <li><a href="#" class="small button">Button 2</a></li>
+      <li><a href="#" class="small button">Button 3</a></li>
+    </ul>
+    <ul class="button-group">
+      <li><a href="#" class="small button">Button 1</a></li>
+      <li><a href="#" class="small button">Button 2</a></li>
+      <li><a href="#" class="small button">Button 3</a></li>
+    </ul>
+  </div>
+
+  <br />
+
+  <h6 class="subheader">HTML</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"button-bar"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+  <br />
+
+  <h6>Advanced</h6>
+  <p>Additional classes can be added to your button bar to change its appearance.</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+  <div class="button-bar">
+    <ul class="button-group round">
+      <li><a href="#" class="small button secondary">Button 1</a></li>
+      <li><a href="#" class="small button secondary">Button 2</a></li>
+      <li><a href="#" class="small button secondary">Button 3</a></li>
+    </ul>
+    <ul class="button-group radius">
+      <li><a href="#" class="small button success">Button 1</a></li>
+      <li><a href="#" class="small button success">Button 2</a></li>
+      <li><a href="#" class="small button success">Button 3</a></li>
+    </ul>
+  </div>
+
+  <br />
+  
+  <h6 class="subheader">HTML</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- You can mix styles in a button bar if you want. --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"button-bar"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group round"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button secondary"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button secondary"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button secondary"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group radius"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button success"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button success"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button success"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+</section>

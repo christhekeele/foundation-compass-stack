@@ -1,0 +1,37 @@
+<section id="grid-collapsable" class="content">
+
+  <h4 class="subheader">Collapsable Rows</h4>
+  <p>The <code>collapse</code> class lets you remove column gutters (padding).</p>
+
+  <p>There are times when you won't want each media query to be collapsed or uncollapsed. In this case, use the media query size you want and collapse or uncollapse and add that to your <code>row</code> element. Example shows no gutter at small media size and then adds the gutter to columns at medium.</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+  <p class="lead">Scale the browser down to a medium size to see the difference.</p>
+  <div class="row medium-uncollapse large-collapse">
+    <div class="small-6 columns">
+      <div class="panel">
+        <p class="show-for-medium-only">On a medium screen, I have a gutters!</p>
+        <p class="show-for-large-up">On a large screen, I have no gutters!</p>
+      </div>
+    </div>
+    <div class="small-6 columns">
+      <div class="panel">
+        <p class="show-for-medium-only">On a medium screen, I have a gutters!</p>
+        <p class="show-for-large-up">On a large screen, I have no gutters!</p>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  
+  <h6 class="subheader">HTML</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row medium-uncollapse large-collapse"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-6 columns"</span>&gt;</span>
+    Removes gutter at large media query
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-6 columns"</span>&gt;</span>
+    Removes gutter at large media query
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+</section>

@@ -1,0 +1,32 @@
+<section id="grid-incomplete" class="content">
+
+  <h4 class="subheader">Incomplete Grids</h4>
+  <p>In order to work around browsers' different rounding behaviors, Foundation will float the last column in a row to the right so the edge aligns. If your row doesn't have a count that adds up to 12 columns, you can tag the last column with a class of <code>end</code> in order to override that behavior.</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+  <div class="row display-end">
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3</div>
+  </div>
+  <div class="row display-end">
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns end">3 end</div>
+  </div>
+
+  <br />
+  
+  <h6 class="subheader">HTML</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns end"</span>&gt;</span>3 end<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+</section>

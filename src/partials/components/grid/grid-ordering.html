@@ -1,0 +1,52 @@
+<section id="grid-ordering" class="content">
+
+  <h4 class="subheader">Source Ordering</h4>
+  <p>Using these source ordering classes, you can shift columns around between our breakpoints. This means if you place sub-navigation below main content on small displays, you have the option to position the sub-navigation on either the left or right of the page for large displays. Prefix push/pull with the size of the device you want to apply the styles to. <code>medium-push-#</code>, <code>large-push-#</code> is the syntax you'll use. Use <code>large-reset-order</code> to reset pushed or pulled columns to their original position on large screens.</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+  <div class="row display">
+    <div class="small-10 small-push-2 columns">10</div>
+    <div class="small-2 small-pull-10 columns">2, last</div>
+  </div>
+  <div class="row display">
+    <div class="large-9 large-push-3 columns">9</div>
+    <div class="large-3 large-pull-9 columns">3, last</div>
+  </div>
+  <div class="row display">
+    <div class="large-8 large-push-4 columns">8</div>
+    <div class="large-4 large-pull-8 columns">4, last</div>
+  </div>
+  <div class="row display">
+    <div class="small-5 small-push-7 medium-7 medium-push-5 columns">7</div>
+    <div class="small-7 small-pull-5 medium-5 medium-pull-7 columns">5, last</div>
+  </div>
+  <div class="row display">
+    <div class="medium-6 medium-push-6 columns">6</div>
+    <div class="medium-6 medium-pull-6 columns">6, last</div>
+  </div>
+
+  <br />
+  
+  <h6 class="subheader">HTML</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-10 small-push-2 columns"</span>&gt;</span>10<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-2 small-pull-10 columns"</span>&gt;</span>2, last<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-9 large-push-3 columns"</span>&gt;</span>9<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-3 large-pull-9 columns"</span>&gt;</span>3, last<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-8 large-push-4 columns"</span>&gt;</span>8<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-4 large-pull-8 columns"</span>&gt;</span>4, last<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-5 small-push-7 medium-7 medium-push-5 columns"</span>&gt;</span>7<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-7 small-pull-5 medium-5 medium-pull-7 columns"</span>&gt;</span>5, last<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-6 medium-push-6 columns"</span>&gt;</span>6<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-6 medium-pull-6 columns"</span>&gt;</span>6, last<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+</section>

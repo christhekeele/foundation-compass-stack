@@ -1,0 +1,106 @@
+<section id="topbar-builtins" class="content">
+
+  <h4 class="subheader">Builtin Components</h4>
+  <p>Several common elements have been supported by default, each one of these elements gets added to either the <code>ul.right</code> or <code>ul.left</code> unordered lists within your Top Bar navigation.</p>
+
+  <h6 class="subheader">Rendered HTML</h6>
+
+  <nav class="top-bar" data-topbar="" role="navigation">
+
+    <!-- Title -->
+    <ul class="title-area">
+      <li class="name"><h1><a href="#">Sexy Top Bar</a></h1></li>
+      <!-- Mobile Menu Toggle -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <!-- Top Bar Section -->
+
+    <section class="top-bar-section">
+
+      <!-- Top Bar Left Nav Elements -->
+      <ul class="left">
+
+        <!-- Search | has-form wrapper -->
+        <li class="has-form">
+          <div class="row collapse">
+            <div class="large-8 small-9 columns">
+              <input type="text" placeholder="Find Stuff">
+            </div>
+            <div class="large-4 small-3 columns">
+              <a href="#" class="alert button expand">Search</a>
+            </div>
+          </div>
+        </li>
+        <li class="has-form">
+          <a class="button">Test</a>
+        </li>
+
+      </ul>
+
+      <!-- Top Bar Right Nav Elements -->
+      <ul class="right">
+
+        <!-- Divider -->
+        <li class="divider"></li>
+
+        <!-- Dropdown -->
+        <li class="has-dropdown not-click"><a href="#">Item 1</a>
+          <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="#">Item 1</a></li>
+            <li><label>Level One</label></li>
+            <li><a href="#">Sub-item 1</a></li>
+            <li><a href="#">Sub-item 2</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Sub-item 3</a></li>
+            <li class="has-dropdown not-click"><a href="#">Sub-item 4</a>
+              <!-- Nested Dropdown -->
+              <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small-only"><a class="parent-link js-generated" href="#">Sub-item 4</a></li>
+                <li><label>Level Two</label></li>
+                <li><a href="#">Sub-item 2</a></li>
+                <li><a href="#">Sub-item 3</a></li>
+                <li><a href="#">Sub-item 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub-item 5</a></li>
+          </ul>
+        </li>
+
+        <li class="divider"></li>
+
+        <!-- Anchor -->
+        <li><a href="#">Generic Button</a></li>
+        <li class="divider"></li>
+
+        <!-- Button -->
+        <li class="has-form show-for-large-up">
+          <a href="http://foundation.zurb.com/docs" class="button">Get Lucky</a>
+        </li>
+        
+      </ul>
+    </section>
+
+  </nav>
+
+  <br />
+
+  <h6 class="subheader">Search Bar</h6>
+  <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"has-form"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row collapse"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-8 small-9 columns"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">placeholder</span>=<span class="value">"Find Stuff"</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-4 small-3 columns"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"alert button expand"</span>&gt;</span>Search<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">li</span>&gt;</span></div></code></pre>
+
+    <h6 class="subheader">Divider</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></div></code></pre>
+
+    <h6 class="subheader">Button</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"has-form"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"http://foundation.zurb.com/docs"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Get Lucky<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">li</span>&gt;</span></div></code></pre>
+
+</section>

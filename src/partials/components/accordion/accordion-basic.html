@@ -1,0 +1,84 @@
+<section id="accordion-basic" class="content active">
+
+  <h4 class="subheader">Basic Accordion</h4>
+  <p>You can create an accordion using minimal markup like so:</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Rendered HTML</h6>
+      <ul class="accordion" data-accordion="">
+        <li class="accordion-navigation">
+          <a href="#panel3a">Accordion 1</a>
+          <div id="panel3a" class="content active">
+            Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel3b">Accordion 2</a>
+          <div id="panel3b" class="content">
+            Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </li>
+        <li class="accordion-navigation">
+          <a href="#panel3c">Accordion 3</a>
+          <div id="panel3c" class="content">
+            Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- If you are using version 5.5 or greater you can use &lt;ul&gt;'s and &lt;li&gt;'s for Accordion markup --&gt;</span>
+
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"accordion"</span> <span class="attribute">data-accordion</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel1a"</span>&gt;</span>Accordion 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel1a"</span> <span class="attribute">class</span>=<span class="value">"content active"</span>&gt;</span>
+      Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2a"</span>&gt;</span>Accordion 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel2a"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+      Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel3a"</span>&gt;</span>Accordion 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel3a"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+
+<span class="comment">&lt;!-- Also works with &lt;dl&gt;'s and &lt;dt&gt;'s in place of &lt;ul&gt;'s and &lt;li&gt;'s. --&gt;</span>
+
+<span class="tag">&lt;<span class="title">dl</span> <span class="attribute">class</span>=<span class="value">"accordion"</span> <span class="attribute">data-accordion</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel1b"</span>&gt;</span>Accordion 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel1b"</span> <span class="attribute">class</span>=<span class="value">"content active"</span>&gt;</span>
+      Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel2b"</span>&gt;</span>Accordion 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel2b"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+      Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">dd</span> <span class="attribute">class</span>=<span class="value">"accordion-navigation"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#panel3b"</span>&gt;</span>Accordion 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"panel3b"</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span>
+      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">dd</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">dl</span>&gt;</span></div></code></pre>
+
+    </div>
+  </div>
+
+</section>

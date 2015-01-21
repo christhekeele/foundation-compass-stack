@@ -1,0 +1,45 @@
+<section id="buttons-customization" class="content">
+
+  <h4 class="subheader">Customizing Buttons</h4>
+  <p>Buttons can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+  
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">button</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use these to build padding for buttons.</span>
+$<span class="tag">button</span>-med<span class="value">: rem-calc(<span class="number">12</span>);</span>
+$<span class="tag">button</span>-tny<span class="value">: rem-calc(<span class="number">7</span>);</span>
+$<span class="tag">button</span>-sml<span class="value">: rem-calc(<span class="number">9</span>);</span>
+$<span class="tag">button</span>-lrg<span class="value">: rem-calc(<span class="number">16</span>);</span>
+
+<span class="comment">// We use this to control the display property.</span>
+$<span class="tag">button</span>-<span class="attribute">display</span><span class="value">: inline-block;</span>
+$<span class="tag">button</span>-<span class="attribute">margin-bottom</span><span class="value">: rem-calc(<span class="number">20</span>);</span>
+
+<span class="comment">// We use these to control button text styles.</span>
+$<span class="tag">button</span>-<span class="attribute">font-family</span><span class="value">: inherit;</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-<span class="attribute">color</span>-alt<span class="value">: <span class="hexcolor">#333</span>;</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-med<span class="value">: rem-calc(<span class="number">16</span>);</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-tny<span class="value">: rem-calc(<span class="number">11</span>);</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-sml<span class="value">: rem-calc(<span class="number">13</span>);</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-lrg<span class="value">: rem-calc(<span class="number">20</span>);</span>
+$<span class="tag">button</span>-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-align<span class="value">: center;</span>
+
+<span class="comment">// We use these to control various hover effects.</span>
+$<span class="tag">button</span>-function-factor<span class="value">: <span class="number">10</span>%;</span>
+
+<span class="comment">// We use these to control button border styles.</span>
+$<span class="tag">button</span>-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span>
+$<span class="tag">button</span>-<span class="attribute">border-style</span><span class="value">: solid;</span>
+
+<span class="comment">// We use this to set the default radius used throughout the core.</span>
+$<span class="tag">button</span>-radius<span class="value">: $global-radius;</span>
+$<span class="tag">button</span>-round<span class="value">: $global-rounded;</span>
+
+<span class="comment">// We use this to set default opacity and cursor for disabled buttons.</span>
+$<span class="tag">button</span>-<span class="value">disabled</span>-<span class="attribute">opacity</span><span class="value">: <span class="number">0.6</span>;</span>
+$<span class="tag">button</span>-<span class="value">disabled</span>-<span class="attribute">cursor</span><span class="value">: $cursor-default-value;</span></div></code></pre>
+
+</section>

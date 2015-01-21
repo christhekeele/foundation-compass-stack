@@ -1,0 +1,40 @@
+<section id="tabs-deep-linking" class="content">
+
+  <h4 class="subheader">Deep Linking Tabs</h4>
+  <p>The tabs Foundation component can parse the location hash value and open the corresponding tab content pane. To enable deep linking set <code>data-options="deep_linking:true"</code>. If the location hash maps to an element ID within a tab content pane, then the appropriate tab will become active and the browser window will scroll to the specified element. If you do not want to scroll to the specified element then set <code>data-options="scroll_to_content: false"</code>.</p>
+
+  <p>In the following example, deep linking is enabled. If the location hash is <code>#tabs-deeplink-2</code> then the second tab will become active. If the location hash is <code>#tabs-deeplink-content-2</code> then the second tab will become active, and the browser will scroll to the paragraph tag with ID, tabs-deeplink-content-2.</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Deep Links</h6>
+      <ul class="tabs" data-tab="" role="tablist" data-options="deep_linking: true">
+        <li class="tab-title active" role="presentational"><a href="#tabs-deeplink-1" role="tab" tabindex="0" aria-selected="true" controls="tabs-deeplink-1">Tab 1</a></li>
+        <li class="tab-title active" role="presentational"><a href="#tabs-deeplink-2" role="tab" tabindex="0" aria-selected="true" controls="tabs-deeplink-2">Tab 2</a></li>
+        <li class="tab-title active" role="presentational"><a href="#tabs-deeplink-3" role="tab" tabindex="0" aria-selected="true" controls="tabs-deeplink-3">Tab 3</a></li>
+      </ul>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Target Link Tabs</h6>
+      <div class="tabs-content">
+        <section id="tabs-deeplink-1" role="tabpanel" aria-hidden="false" class="content active">
+          <h2>First Panel Header</h2>
+          <p id="tabs-deeplink-content-1">First panel content goes here...</p>
+        </section>
+        <section id="tabs-deeplink-2" role="tabpanel" aria-hidden="true" class="content">
+          <h2>Second Panel Header</h2>
+          <p id="tabs-deeplink-content-2"> Second panel content goes here...</p>
+        </section>
+        <section id="tabs-deeplink-3" role="tabpanel" aria-hidden="true" class="content">
+          <h2>Third Panel Header</h2>
+          <p id="tabs-deeplink-content-3"> Third panel content goes here...</p>
+        </section>
+      </div>
+      
+    </div>
+  </div>
+
+</section>

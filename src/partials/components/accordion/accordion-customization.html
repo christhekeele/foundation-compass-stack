@@ -1,0 +1,36 @@
+<section id="accordion-customization" class="content">
+
+  <h4 class="subheader">Customizing Accordion</h4>
+  <p>Accordions can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-accordion-classes<span class="value">: $include-html-classes;</span>
+
+$accordion-navigation-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">16</span>);</span>
+$accordion-navigation-bg-<span class="attribute">color</span><span class="value">: $silver;</span>
+$accordion-navigation-hover-bg-<span class="attribute">color</span><span class="value">: scale-color($accordion-navigation-bg-color, $lightness: -<span class="number">5</span>%);</span>
+$accordion-navigation-active-bg-<span class="attribute">color</span><span class="value">: scale-color($accordion-navigation-bg-color, $lightness: -<span class="number">3</span>%);</span>
+$accordion-navigation-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $jet;</span>
+$accordion-navigation-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">16</span>);</span>
+$accordion-navigation-<span class="attribute">font-family</span><span class="value">: $body-font-family;</span>
+
+$accordion-<span class="attribute">content</span>-<span class="attribute">padding</span><span class="value">: $column-gutter/<span class="number">2</span>;</span>
+$accordion-<span class="attribute">content</span>-active-bg-<span class="attribute">color</span><span class="value">: $white;</span></div></code></pre>
+    <br />
+    <p>It's easy to configure accordions using our provided Javascript. You can use data-attributes or plain old Javascript. Make sure <code>jquery.js</code>, <code>foundation.js</code> and <code>foundation.accordion.js</code> have been included on your page before continuing.</p>
+    <h6 class="subheader">JS</h6>
+    <pre><code class="language-js"><div class="code-container">$(document).foundation({
+  accordion: {
+    <span class="comment">// specify the class used for accordion panels</span>
+    content_class: <span class="string">'content'</span>,
+    <span class="comment">// specify the class used for active (or open) accordion panels</span>
+    active_class: <span class="string">'active'</span>,
+    <span class="comment">// allow multiple accordion panels to be active at the same time</span>
+    multi_expand: <span class="literal">false</span>,
+    <span class="comment">// allow accordion panels to be closed by clicking on their headers</span>
+    <span class="comment">// setting to false only closes accordion panels when another is opened</span>
+    toggleable: <span class="literal">true</span>
+  }
+});</div></code></pre>
+
+</section>
