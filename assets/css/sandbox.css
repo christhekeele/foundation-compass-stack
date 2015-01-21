@@ -14096,7 +14096,18 @@ img.round-margin {
   transform: translate3d(-100.5%, 0, 0);
 }
 
-/* line 8698, ../../../src/assets/scss/sandbox.scss */
+/* line 8697, ../../../src/assets/scss/sandbox.scss */
 h6 {
   font-weight: bold;
+}
+
+/* line 8701, ../../../src/assets/scss/sandbox.scss */
+.tabs dd a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 8706, ../../../src/assets/scss/sandbox.scss */
+h5 {
+  font-style: oblique;
 }
