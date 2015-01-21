@@ -1,0 +1,107 @@
+<section id="type-customization" class="content">
+
+  <h4 class="subheader">Customizing Typography</h4>
+  <p>We've got a ton of variables for you to use to customize your typography.</p>
+
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-type-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use these to control header font styles</span>
+$<span class="tag">header</span>-<span class="attribute">font-family</span><span class="value">: <span class="string">"Helvetica Neue"</span>, <span class="string">"Helvetica"</span>, Helvetica, Arial, sans-serif;</span>
+$<span class="tag">header</span>-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$<span class="tag">header</span>-<span class="attribute">font-style</span><span class="value">: normal;</span>
+$<span class="tag">header</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#222</span>;</span>
+$<span class="tag">header</span>-<span class="attribute">line-height</span><span class="value">: <span class="number">1.4</span>;</span>
+$<span class="tag">header</span>-<span class="attribute">top</span>-<span class="attribute">margin</span><span class="value">: .<span class="number">2</span>rem;</span>
+$<span class="tag">header</span>-<span class="attribute">bottom</span>-<span class="attribute">margin</span><span class="value">: .<span class="number">5</span>rem;</span>
+$<span class="tag">header</span>-<span class="attribute">text-rendering</span><span class="value">: optimizeLegibility;</span>
+
+<span class="comment">// We use these to control header font sizes</span>
+$<span class="tag">h1</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">44</span>);</span>
+$<span class="tag">h2</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">37</span>);</span>
+$<span class="tag">h3</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">27</span>);</span>
+$<span class="tag">h4</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">23</span>);</span>
+$<span class="tag">h5</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">18</span>);</span>
+$<span class="tag">h6</span>-<span class="attribute">font-size</span><span class="value">: <span class="number">1</span>rem;</span>
+
+<span class="comment">// These control how subheaders are styled</span>
+$subheader-<span class="attribute">line-height</span><span class="value">: <span class="number">1.4</span>;</span>
+$subheader-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: scale-color($header-font-color, $lightness: <span class="number">35</span>%);</span>
+$subheader-<span class="attribute">font-weight</span><span class="value">: <span class="number">300</span>;</span>
+$subheader-<span class="attribute">top</span>-<span class="attribute">margin</span><span class="value">: .<span class="number">2</span>rem;</span>
+$subheader-<span class="attribute">bottom</span>-<span class="attribute">margin</span><span class="value">: .<span class="number">5</span>rem;</span>
+
+<span class="comment">// A general small styling</span>
+$<span class="tag">small</span>-<span class="attribute">font-size</span><span class="value">: <span class="number">60</span>%;</span>
+$<span class="tag">small</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: scale-color($header-font-color, $lightness: <span class="number">35</span>%);</span>
+
+<span class="comment">// We use these to style paragraphs</span>
+$paragraph-<span class="attribute">font-family</span><span class="value">: inherit;</span>
+$paragraph-<span class="attribute">font-weight</span><span class="value">: normal;</span>
+$paragraph-<span class="attribute">font-size</span><span class="value">: <span class="number">1</span>rem;</span>
+$paragraph-<span class="attribute">line-height</span><span class="value">: <span class="number">1.6</span>;</span>
+$paragraph-<span class="attribute">margin-bottom</span><span class="value">: rem-calc(<span class="number">20</span>);</span>
+$paragraph-<span class="tag">aside</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$paragraph-<span class="tag">aside</span>-<span class="attribute">line-height</span><span class="value">: <span class="number">1.35</span>;</span>
+$paragraph-<span class="tag">aside</span>-<span class="attribute">font-style</span><span class="value">: italic;</span>
+$paragraph-<span class="attribute">text-rendering</span><span class="value">: optimizeLegibility;</span>
+
+<span class="comment">// We use these to style code tags</span>
+$<span class="tag">code</span>-<span class="attribute">color</span><span class="value">: scale-color($alert-color, $lightness: -<span class="number">27</span>%);</span>
+$<span class="tag">code</span>-<span class="attribute">font-family</span><span class="value">: Consolas, Liberation Mono, Courier, monospace;</span>
+$<span class="tag">code</span>-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+
+<span class="comment">// We use these to style anchors</span>
+$anchor-<span class="attribute">text-decoration</span><span class="value">: none;</span>
+$anchor-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $primary-color;</span>
+$anchor-<span class="attribute">font</span>-<span class="attribute">color</span>-hover<span class="value">: scale-color($primary-color, $lightness: -<span class="number">14</span>%);</span>
+
+<span class="comment">// We use these to style the hr element</span>
+$<span class="tag">hr</span>-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span>
+$<span class="tag">hr</span>-<span class="attribute">border-style</span><span class="value">: solid;</span>
+$<span class="tag">hr</span>-<span class="attribute">border-color</span><span class="value">: <span class="hexcolor">#ddd</span>;</span>
+$<span class="tag">hr</span>-<span class="attribute">margin</span><span class="value">: rem-calc(<span class="number">20</span>);</span>
+
+<span class="comment">// We use these to style lists</span>
+$<span class="attribute">list-style-position</span><span class="value">: outside;</span>
+$list-side-<span class="attribute">margin</span><span class="value">: <span class="number">0</span>;</span>
+$list-nested-<span class="attribute">margin</span><span class="value">: rem-calc(<span class="number">20</span>);</span>
+$definition-list-<span class="tag">header</span>-weight<span class="value">: bold;</span>
+$definition-list-<span class="tag">header</span>-<span class="attribute">margin-bottom</span><span class="value">: .<span class="number">3</span>rem;</span>
+$definition-list-<span class="attribute">margin-bottom</span><span class="value">: rem-calc(<span class="number">12</span>);</span>
+
+<span class="comment">// We use these to style blockquotes</span>
+$<span class="tag">blockquote</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: scale-color($header-font-color, $lightness: <span class="number">35</span>%);</span>
+$<span class="tag">blockquote</span>-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">9</span> <span class="number">20</span> <span class="number">0</span> <span class="number">19</span>);</span>
+$<span class="tag">blockquote</span>-<span class="attribute">border</span><span class="value">: <span class="number">1</span>px solid <span class="hexcolor">#ddd</span>;</span>
+$<span class="tag">blockquote</span>-<span class="tag">cite</span>-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">13</span>);</span>
+$<span class="tag">blockquote</span>-<span class="tag">cite</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: scale-color($header-font-color, $lightness: <span class="number">23</span>%);</span>
+$<span class="tag">blockquote</span>-<span class="tag">cite</span>-<span class="tag">link</span>-<span class="attribute">color</span><span class="value">: $blockquote-cite-font-color;</span>
+
+<span class="comment">// Acronym styles</span>
+$<span class="tag">acronym</span>-<span class="value">underline</span><span class="value">: <span class="number">1</span>px dotted <span class="hexcolor">#ddd</span>;</span>
+
+<span class="comment">// We use these to control padding and margin</span>
+$microformat-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">10</span> <span class="number">12</span>);</span>
+$microformat-<span class="attribute">margin</span><span class="value">: rem-calc(<span class="number">0</span> <span class="number">0</span> <span class="number">20</span> <span class="number">0</span>);</span>
+
+<span class="comment">// We use these to control the border styles</span>
+$microformat-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span>
+$microformat-<span class="attribute">border-style</span><span class="value">: solid;</span>
+$microformat-<span class="attribute">border-color</span><span class="value">: <span class="hexcolor">#ddd</span>;</span>
+
+<span class="comment">// We use these to control full name font styles</span>
+$microformat-fullname-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$microformat-fullname-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">15</span>);</span>
+
+<span class="comment">// We use this to control the summary font styles</span>
+$microformat-summary-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+
+<span class="comment">// We use this to control abbr padding</span>
+$microformat-<span class="tag">abbr</span>-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">0</span> <span class="number">1</span>);</span>
+
+<span class="comment">// We use this to control abbr font styles</span>
+$microformat-<span class="tag">abbr</span>-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$microformat-<span class="tag">abbr</span>-<span class="attribute">font</span>-decoration<span class="value">: none;</span></div></code></pre>
+
+</section>
