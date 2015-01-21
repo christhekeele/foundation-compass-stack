@@ -4,13 +4,15 @@
   <h3 class="subheader">Accordions are elements used to expand and collapse content that is broken into logical sections, much like tabs.</h3>
 
   <dl class="tabs" data-tab="" data-options="deep_linking:true">
-    <dd class="active"><a href="#accordion-basic">Basic</a></dd>
+    <dd class="active"><a href="#accordion-preview">Preview</a></dd>
+    <dd><a href="#accordion-basic">Basic</a></dd>
     <dd><a href="#accordion-distributed">Distributed</a></dd>
     <dd><a href="#accordion-callbacks">Callbacks</a></dd>
     <dd><a href="#accordion-customization">Customization</a></dd>
   </dl>
 
   <div class="tabs-content">
+    {{> accordion-preview }}
     {{> accordion-basic }}
     {{> accordion-distributed }}
     {{> accordion-callbacks }}

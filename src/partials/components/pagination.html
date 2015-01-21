@@ -1,16 +1,18 @@
 <section id="pagination">
-  
+
   <h2>Pagination</h2>
   <h3 class="subheader">Pagination is a type of navigation that lets users tap through a series of related pages. Moving between pages has become less common with the advent of longer pages and AJAX loading, but if you need pagination, Foundation has you covered.</h3>
 
   <dl class="tabs" data-tab="" data-options="deep_linking:true">
-    <dd class="active"><a href="#pagination-basic">Basic</a></dd>
+    <dd class="active"><a href="#pagination-preview">Preview</a></dd>
+    <dd><a href="#pagination-basic">Basic</a></dd>
     <dd><a href="#pagination-advanced">Advanced</a></dd>
     <dd><a href="#pagination-accessibility">Accessibility</a></dd>
     <dd><a href="#pagination-customization">Customization</a></dd>
   </dl>
 
   <div class="tabs-content">
+    {{> pagination-preview }}
     {{> pagination-basic }}
     {{> pagination-advanced }}
     {{> pagination-accessibility }}

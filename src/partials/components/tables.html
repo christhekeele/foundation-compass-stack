@@ -1,15 +1,17 @@
 <section id="tables">
-  
+
   <h2>Tables</h2>
   <h3 class="subheader">Okay, they're not the sexiest things ever, but tables get the job done (for tabular data, of course).</h3>
 
   <dl class="tabs" data-tab="" data-options="deep_linking:true">
-    <dd class="active"><a href="#tables-basic">Basic</a></dd>
+    <dd class="active"><a href="#tables-preview">Preview</a></dd>
+    <dd><a href="#tables-basic">Basic</a></dd>
     <dd><a href="#tables-accessibility">Accessibility</a></dd>
     <dd><a href="#tables-customization">Customization</a></dd>
   </dl>
 
   <div class="tabs-content">
+    {{> tables-preview }}
     {{> tables-basic }}
     {{> tables-accessibility }}
     {{> tables-customization }}

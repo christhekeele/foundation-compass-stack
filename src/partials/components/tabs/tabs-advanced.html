@@ -1,4 +1,4 @@
-<section id="tabs-deep-linking" class="content">
+<section id="tabs-advanced" class="content">
 
   <h4 class="subheader">Deep Linking Tabs</h4>
   <p>The tabs Foundation component can parse the location hash value and open the corresponding tab content pane. To enable deep linking set <code>data-options="deep_linking:true"</code>. If the location hash maps to an element ID within a tab content pane, then the appropriate tab will become active and the browser window will scroll to the specified element. If you do not want to scroll to the specified element then set <code>data-options="scroll_to_content: false"</code>.</p>
@@ -33,7 +33,39 @@
           <p id="tabs-deeplink-content-3"> Third panel content goes here...</p>
         </section>
       </div>
-      
+
+    </div>
+  </div>
+
+  <br />
+
+  <h4 class="subheader">Tab Callbacks</h4>
+  <p>There are two ways to bind to callbacks in your tabs.</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Callback Function</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
+$(document).foundation({
+  tab: {
+    callback : <span class="function"><span class="keyword">function</span> <span class="params">(tab)</span> {</span>
+      console.log(tab);
+    }
+  }
+});
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Toggled Event</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
+$(<span class="string">'#myTabs'</span>).on(<span class="string">'toggled'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(event, tab)</span> {</span>
+  console.log(tab);
+});
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></div></code></pre>
+
     </div>
   </div>
 

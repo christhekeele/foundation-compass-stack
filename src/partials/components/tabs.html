@@ -1,22 +1,22 @@
 <section id="tabs">
-  
+
   <h2>Tabs</h2>
   <h3 class="subheader">Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.</h3>
 
   <dl class="tabs" data-tab="" data-options="deep_linking:true">
-    <dd class="active"><a href="#tabs-horizontal">Horizontal</a></dd>
+    <dd class="active"><a href="#tabs-preview">Preview</a></dd>
+    <dd><a href="#tabs-horizontal">Horizontal</a></dd>
     <dd><a href="#tabs-vertical">Vertical</a></dd>
-    <dd><a href="#tabs-deep-linking">Deep Linking</a></dd>
-    <dd><a href="#tabs-callbacks">Callbacks</a></dd>
+    <dd><a href="#tabs-advanced">Advanced</a></dd>
     <dd><a href="#tabs-accessibility">Accessibility</a></dd>
     <dd><a href="#tabs-customization">Customization</a></dd>
   </dl>
 
   <div class="tabs-content">
+    {{> tabs-preview }}
     {{> tabs-horizontal }}
     {{> tabs-vertical }}
-    {{> tabs-deep-linking }}
-    {{> tabs-callbacks }}
+    {{> tabs-advanced }}
     {{> tabs-accessibility }}
     {{> tabs-customization }}
   </div>
