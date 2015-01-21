@@ -1,17 +1,57 @@
 <h2 id="grid">Grid</h2>
 <h3 class="subheader">Create powerful multi-device layouts quickly and easily with the default 12-column, nest-able Foundation grid. If you're familiar with grid systems, you'll feel right at home. If not, you'll learn quickly.</h3>
 
-<ul class="accordion" data-accordion>
+<dl class="tabs" data-tab="" data-options="deep_linking:true">
+  <dd class="active"><a href="#grid-basic">Basic</a></dd>
+  <dd><a href="#grid-offsets">Offsets</a></dd>
+  <dd><a href="#grid-incomplete">Incomplete</a></dd>
+  <dd><a href="#grid-collapsable">Collapsable</a></dd>
+  <dd><a href="#grid-centered">Centered</a></dd>
+  <dd><a href="#grid-ordering">Ordering</a></dd>
+  <dd><a href="#grid-customization">Customization</a></dd>
+</dl>
 
-  <li class="accordion-navigation">
-    <a href="#grid-basic"><h4>Basic</h4></a>
-    <div id="grid-basic" class="content">
+<div class="tabs-content">
+  <div id="grid-basic" class="content active">
 
-      <h5 class="subheader">Basic Foundation Grids</h5>
-      <p>Start by adding an element with a class of <code>row</code>. This will create a horizontal block to contain vertical columns. Then add divs with a <code>column</code> class within that row. You can use <code>column</code> or <code>columns</code> - the only difference is grammar. Specify the widths of each column with the small-#, medium-#, and large-# classes.</p>
-      <p><strong>Foundation is mobile-first</strong>. Code for small screens first, and larger devices will inherit those styles. Customize for larger screens as necessary.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+    <h4 class="subheader">Basic Foundation Grids</h4>
+    <p>Start by adding an element with a class of <code>row</code>. This will create a horizontal block to contain vertical columns. Then add divs with a <code>column</code> class within that row. You can use <code>column</code> or <code>columns</code> - the only difference is grammar. Specify the widths of each column with the small-#, medium-#, and large-# classes.</p>
+    <p><strong>Foundation is mobile-first</strong>. Code for small screens first, and larger devices will inherit those styles. Customize for larger screens as necessary.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row display">
+      <div class="small-2 large-4 columns"><span class="hide-for-large">2</span><span class="show-for-large">4</span></div>
+      <div class="small-4 large-4 columns">4</div>
+      <div class="small-6 large-4 columns"><span class="hide-for-large">6</span><span class="show-for-large">4</span></div>
+    </div>
+    <div class="row display">
+      <div class="large-3 columns"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
+      <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+      <div class="large-3 columns"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
+    </div>
+    <div class="row display">
+      <div class="small-6 large-2 columns"><span class="hide-for-large">6</span><span class="show-for-large">2</span></div>
+      <div class="small-6 large-8 columns"><span class="hide-for-large">6</span><span class="show-for-large">8</span></div>
+      <div class="small-12 large-2 columns"><span class="hide-for-large">full</span><span class="show-for-large">2</span></div>
+    </div>
+    <div class="row display">
+      <div class="small-3 columns">3</div>
+      <div class="small-9 columns">9</div>
+    </div>
+    <div class="row display">
+      <div class="large-4 columns"><span class="hide-for-large">full</span><span class="show-for-large">4</span></div>
+      <div class="large-8 columns"><span class="hide-for-large">full</span><span class="show-for-large">8</span></div>
+    </div>
+    <div class="row display">
+      <div class="small-6 large-5 columns"><span class="hide-for-large">6</span><span class="show-for-large">5</span></div>
+      <div class="small-6 large-7 columns"><span class="hide-for-large">6</span><span class="show-for-large">7</span></div>
+    </div>
+    <div class="row display">
+      <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+      <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+    </div>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-2 large-4 columns"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-4 large-4 columns"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-6 large-4 columns"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
@@ -42,52 +82,21 @@
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-6 columns"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-6 columns"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="row display">
-        <div class="small-2 large-4 columns"><span class="hide-for-large">2</span><span class="show-for-large">4</span></div>
-        <div class="small-4 large-4 columns">4</div>
-        <div class="small-6 large-4 columns"><span class="hide-for-large">6</span><span class="show-for-large">4</span></div>
-      </div>
-      <div class="row display">
-        <div class="large-3 columns"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
-        <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
-        <div class="large-3 columns"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
-      </div>
-      <div class="row display">
-        <div class="small-6 large-2 columns"><span class="hide-for-large">6</span><span class="show-for-large">2</span></div>
-        <div class="small-6 large-8 columns"><span class="hide-for-large">6</span><span class="show-for-large">8</span></div>
-        <div class="small-12 large-2 columns"><span class="hide-for-large">full</span><span class="show-for-large">2</span></div>
-      </div>
-      <div class="row display">
-        <div class="small-3 columns">3</div>
-        <div class="small-9 columns">9</div>
-      </div>
-      <div class="row display">
-        <div class="large-4 columns"><span class="hide-for-large">full</span><span class="show-for-large">4</span></div>
-        <div class="large-8 columns"><span class="hide-for-large">full</span><span class="show-for-large">8</span></div>
-      </div>
-      <div class="row display">
-        <div class="small-6 large-5 columns"><span class="hide-for-large">6</span><span class="show-for-large">5</span></div>
-        <div class="small-6 large-7 columns"><span class="hide-for-large">6</span><span class="show-for-large">7</span></div>
-      </div>
-      <div class="row display">
-        <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
-        <div class="large-6 columns"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
-      </div>
-
-      <hr />
+    <br />
+    <h5>Small Grids</h5>
+    <p>Small grids expand to large screens easier than large grids cram into small screens.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row display">
+      <div class="small-2 columns">2 columns</div>
+      <div class="small-10 columns">10 columns</div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#grid-small"><h4>Small</h4></a>
-    <div id="grid-small" class="content">
-
-      <h5 class="subheader">Small Grid</h5>
-      <p>Small grids expand to large screens easier than large grids cram into small screens.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+    <div class="row display">
+      <div class="small-3 columns">3 columns</div>
+      <div class="small-9 columns">9 columns</div>
+    </div>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-2 columns"</span>&gt;</span>2 columns<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-10 columns"</span>&gt;</span>10 columns<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
@@ -95,29 +104,21 @@
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-3 columns"</span>&gt;</span>3 columns<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-9 columns"</span>&gt;</span>9 columns<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="row display">
-        <div class="small-2 columns">2 columns</div>
-        <div class="small-10 columns">10 columns</div>
-      </div>
-      <div class="row display">
-        <div class="small-3 columns">3 columns</div>
-        <div class="small-9 columns">9 columns</div>
-      </div>
-
-      <hr />
+    <br />
+    <h5>Medium Grids</h4>
+    <p>Medium sized screens will inherit styles from small, unless you specify a different layout, using the medium grid classes.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row display">
+      <div class="medium-2 columns">2 columns</div>
+      <div class="medium-10 columns">10 columns</div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#grid-medium"><h4>Medium</h4></a>
-    <div id="grid-medium" class="content">
-
-      <h5 class="subheader">Medium Grid</h5>
-      <p>Medium sized screens will inherit styles from small, unless you specify a different layout, using the medium grid classes.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+    <div class="row display">
+      <div class="medium-3 columns">3 columns</div>
+      <div class="medium-9 columns">9 columns</div>
+    </div>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-2 columns"</span>&gt;</span>2 columns<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-10 columns"</span>&gt;</span>10 columns<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
@@ -125,29 +126,27 @@
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3 columns<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-9 columns"</span>&gt;</span>9 columns<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-        <br />
-      <h6 class="subheader">Rendered HTML</h6>
-        <div class="row display">
-          <div class="medium-2 columns">2 columns</div>
-          <div class="medium-10 columns">10 columns</div>
+    <br />
+    <h5>Nesting</h5>
+    <p>You can nest the grids indefinitely, though at a certain point it will get absurd.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row display">
+      <div class="small-8 columns">8
+        <div class="row">
+          <div class="small-8 columns">8 Nested
+            <div class="row">
+              <div class="small-8 columns">8 Nested Again</div>
+              <div class="small-4 columns">4</div>
+            </div>
+          </div>
+          <div class="small-4 columns">4</div>
         </div>
-        <div class="row display">
-          <div class="medium-3 columns">3 columns</div>
-          <div class="medium-9 columns">9 columns</div>
-        </div>
-
-      <hr />
+      </div>
+      <div class="small-4 columns">4</div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#grid-advanced"><h4>Advanced</h4></a>
-    <div id="grid-advanced" class="content">
-
-      <h5 class="subheader">Advanced Grid</h5>
-      <p>You can nest the grids indefinitely, though at a certain point it will get absurd.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-8 columns"</span>&gt;</span>8
     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
       <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-8 columns"</span>&gt;</span>8 Nested
@@ -161,35 +160,34 @@
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-4 columns"</span>&gt;</span>4<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="row display">
-        <div class="small-8 columns">8
-          <div class="row">
-            <div class="small-8 columns">8 Nested
-              <div class="row">
-                <div class="small-8 columns">8 Nested Again</div>
-                <div class="small-4 columns">4</div>
-              </div>
-            </div>
-            <div class="small-4 columns">4</div>
-          </div>
-        </div>
-        <div class="small-4 columns">4</div>
-      </div>
 
-      <hr />
+
+  </div>
+  <div id="grid-offsets" class="content">
+
+
+    <h4 class="subheader">Offsets in Grids</h4>
+    <p>Move blocks up to 11 columns to the right by using classes like <code>.large-offset-1</code> and <code>.small-offset-3</code>.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row display">
+      <div class="large-1 columns">1</div>
+      <div class="large-11 columns">11</div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#grid-offsets"><h4>Offsets</h4></a>
-    <div id="grid-offsets" class="content">
-
-      <h5 class="subheader">Offsets in Grids</h5>
-      <p>Move blocks up to 11 columns to the right by using classes like <code>.large-offset-1</code> and <code>.small-offset-3</code>.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+    <div class="row display">
+      <div class="large-1 columns">1</div>
+      <div class="large-10 large-offset-1 columns">10, offset 1</div>
+    </div>
+    <div class="row display">
+      <div class="large-1 columns">1</div>
+      <div class="large-9 large-offset-2 columns">9, offset 2</div>
+    </div>
+    <div class="row display">
+      <div class="large-1 columns">1</div>
+      <div class="large-8 large-offset-3 columns">8, offset 3</div>
+    </div>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-1 columns"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-11 columns"</span>&gt;</span>11<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
@@ -205,37 +203,28 @@
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-1 columns"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"large-8 large-offset-3 columns"</span>&gt;</span>8, offset 3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="row display">
-        <div class="large-1 columns">1</div>
-        <div class="large-11 columns">11</div>
-      </div>
-      <div class="row display">
-        <div class="large-1 columns">1</div>
-        <div class="large-10 large-offset-1 columns">10, offset 1</div>
-      </div>
-      <div class="row display">
-        <div class="large-1 columns">1</div>
-        <div class="large-9 large-offset-2 columns">9, offset 2</div>
-      </div>
-      <div class="row display">
-        <div class="large-1 columns">1</div>
-        <div class="large-8 large-offset-3 columns">8, offset 3</div>
-      </div>
 
-      <hr />
+
+  </div>
+  <div id="grid-incomplete" class="content">
+
+
+    <h4 class="subheader">Incomplete Grids</h4>
+    <p>In order to work around browsers' different rounding behaviors, Foundation will float the last column in a row to the right so the edge aligns. If your row doesn't have a count that adds up to 12 columns, you can tag the last column with a class of <code>end</code> in order to override that behavior.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row display-end">
+      <div class="medium-3 columns">3</div>
+      <div class="medium-3 columns">3</div>
+      <div class="medium-3 columns">3</div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#grid-incomplete"><h4>Incomplete</h4></a>
-    <div id="grid-incomplete" class="content">
-
-      <h5 class="subheader">Incomplete Grids</h5>
-      <p>In order to work around browsers' different rounding behaviors, Foundation will float the last column in a row to the right so the edge aligns. If your row doesn't have a count that adds up to 12 columns, you can tag the last column with a class of <code>end</code> in order to override that behavior.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+    <div class="row display-end">
+      <div class="medium-3 columns">3</div>
+      <div class="medium-3 columns">3</div>
+      <div class="medium-3 columns end">3 end</div>
+    </div>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
@@ -245,32 +234,34 @@
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-3 columns end"</span>&gt;</span>3 end<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="row display-end">
-        <div class="medium-3 columns">3</div>
-        <div class="medium-3 columns">3</div>
-        <div class="medium-3 columns">3</div>
-      </div>
-      <div class="row display-end">
-        <div class="medium-3 columns">3</div>
-        <div class="medium-3 columns">3</div>
-        <div class="medium-3 columns end">3 end</div>
-      </div>
 
-      <hr />
+
+  </div>
+  <div id="grid-collapsable" class="content">
+
+
+    <h4 class="subheader">Collapsable Rows</h4>
+    <p>The <code>collapse</code> class lets you remove column gutters (padding).</p>
+    <p>There are times when you won't want each media query to be collapsed or uncollapsed. In this case, use the media query size you want and collapse or uncollapse and add that to your <code>row</code> element. Example shows no gutter at small media size and then adds the gutter to columns at medium.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <p class="lead">Scale the browser down to a medium size to see the difference.</p>
+    <div class="row medium-uncollapse large-collapse">
+      <div class="small-6 columns">
+        <div class="panel">
+          <p class="show-for-medium-only">On a medium screen, I have a gutters!</p>
+          <p class="show-for-large-up">On a large screen, I have no gutters!</p>
+        </div>
+      </div>
+      <div class="small-6 columns">
+        <div class="panel">
+          <p class="show-for-medium-only">On a medium screen, I have a gutters!</p>
+          <p class="show-for-large-up">On a large screen, I have no gutters!</p>
+        </div>
+      </div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#grid-collapsable"><h4>Collapsable</h4></a>
-    <div id="grid-collapsable" class="content">
-
-      <h5 class="subheader">Collapsable Rows</h5>
-      <p>The <code>collapse</code> class lets you remove column gutters (padding).</p>
-      <p>There are times when you won't want each media query to be collapsed or uncollapsed. In this case, use the media query size you want and collapse or uncollapse and add that to your <code>row</code> element. Example shows no gutter at small media size and then adds the gutter to columns at medium.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row medium-uncollapse large-collapse"</span>&gt;</span>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row medium-uncollapse large-collapse"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-6 columns"</span>&gt;</span>
     Removes gutter at large media query
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
@@ -278,36 +269,30 @@
     Removes gutter at large media query
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <p class="lead">Scale the browser down to a medium size to see the difference.</p>
-      <div class="row medium-uncollapse large-collapse">
-        <div class="small-6 columns">
-          <div class="panel">
-            <p class="show-for-medium-only">On a medium screen, I have a gutters!</p>
-            <p class="show-for-large-up">On a large screen, I have no gutters!</p>
-          </div>
-        </div>
-        <div class="small-6 columns">
-          <div class="panel">
-            <p class="show-for-medium-only">On a medium screen, I have a gutters!</p>
-            <p class="show-for-large-up">On a large screen, I have no gutters!</p>
-          </div>
-        </div>
-      </div>
 
-      <hr />
+
+  </div>
+  <div id="grid-centered" class="content">
+
+
+    <h4 class="subheader">Centered Columns</h4>
+    <p>Center your columns by adding a class of <code>small-centered</code> to your <code>column</code>. Large will inherit small centering by default, but you can also center solely on large by applying a <code>large-centered</code> class. To uncenter on large screens use <code>large-uncentered</code>.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row display">
+      <div class="small-3 small-centered columns">3 centered</div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#grid-centered"><h4>Centered</h4></a>
-    <div id="grid-centered" class="content">
-
-      <h5 class="subheader">Centered Columns</h5>
-      <p>Center your columns by adding a class of <code>small-centered</code> to your <code>column</code>. Large will inherit small centering by default, but you can also center solely on large by applying a <code>large-centered</code> class. To uncenter on large screens use <code>large-uncentered</code>.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+    <div class="row display">
+      <div class="small-6 large-centered columns">6 centered, large</div>
+    </div>
+    <div class="row display">
+      <div class="small-9 small-centered large-uncentered columns">9 centered small</div>
+    </div>
+    <div class="row display">
+      <div class="small-11 small-centered columns">11 centered</div>
+    </div>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-3 small-centered columns"</span>&gt;</span>3 centered<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
@@ -319,33 +304,38 @@
 <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-11 small-centered columns"</span>&gt;</span>11 centered<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="row display">
-        <div class="small-3 small-centered columns">3 centered</div>
-      </div>
-      <div class="row display">
-        <div class="small-6 large-centered columns">6 centered, large</div>
-      </div>
-      <div class="row display">
-        <div class="small-9 small-centered large-uncentered columns">9 centered small</div>
-      </div>
-      <div class="row display">
-        <div class="small-11 small-centered columns">11 centered</div>
-      </div>
 
-      <hr />
+
+  </div>
+  <div id="grid-ordering" class="content">
+
+
+    <h4 class="subheader">Source Ordering</h4>
+    <p>Using these source ordering classes, you can shift columns around between our breakpoints. This means if you place sub-navigation below main content on small displays, you have the option to position the sub-navigation on either the left or right of the page for large displays. Prefix push/pull with the size of the device you want to apply the styles to. <code>medium-push-#</code>, <code>large-push-#</code> is the syntax you'll use. Use <code>large-reset-order</code> to reset pushed or pulled columns to their original position on large screens.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row display">
+      <div class="small-10 small-push-2 columns">10</div>
+      <div class="small-2 small-pull-10 columns">2, last</div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#grid-ordering"><h4>Ordering</h4></a>
-    <div id="grid-ordering" class="content">
-
-      <h5 class="subheader">Source Ordering</h5>
-      <p>Using these source ordering classes, you can shift columns around between our breakpoints. This means if you place sub-navigation below main content on small displays, you have the option to position the sub-navigation on either the left or right of the page for large displays. Prefix push/pull with the size of the device you want to apply the styles to. <code>medium-push-#</code>, <code>large-push-#</code> is the syntax you'll use. Use <code>large-reset-order</code> to reset pushed or pulled columns to their original position on large screens.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+    <div class="row display">
+      <div class="large-9 large-push-3 columns">9</div>
+      <div class="large-3 large-pull-9 columns">3, last</div>
+    </div>
+    <div class="row display">
+      <div class="large-8 large-push-4 columns">8</div>
+      <div class="large-4 large-pull-8 columns">4, last</div>
+    </div>
+    <div class="row display">
+      <div class="small-5 small-push-7 medium-7 medium-push-5 columns">7</div>
+      <div class="small-7 small-pull-5 medium-5 medium-pull-7 columns">5, last</div>
+    </div>
+    <div class="row display">
+      <div class="medium-6 medium-push-6 columns">6</div>
+      <div class="medium-6 medium-pull-6 columns">6, last</div>
+    </div>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-10 small-push-2 columns"</span>&gt;</span>10<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"small-2 small-pull-10 columns"</span>&gt;</span>2, last<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
@@ -365,75 +355,50 @@
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-6 medium-push-6 columns"</span>&gt;</span>6<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"medium-6 medium-pull-6 columns"</span>&gt;</span>6, last<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="row display">
-        <div class="small-10 small-push-2 columns">10</div>
-        <div class="small-2 small-pull-10 columns">2, last</div>
-      </div>
-      <div class="row display">
-        <div class="large-9 large-push-3 columns">9</div>
-        <div class="large-3 large-pull-9 columns">3, last</div>
-      </div>
-      <div class="row display">
-        <div class="large-8 large-push-4 columns">8</div>
-        <div class="large-4 large-pull-8 columns">4, last</div>
-      </div>
-      <div class="row display">
-        <div class="small-5 small-push-7 medium-7 medium-push-5 columns">7</div>
-        <div class="small-7 small-pull-5 medium-5 medium-pull-7 columns">5, last</div>
-      </div>
-      <div class="row display">
-        <div class="medium-6 medium-push-6 columns">6</div>
-        <div class="medium-6 medium-pull-6 columns">6, last</div>
-      </div>
 
-      <hr />
-    </div>
-  </li>
 
-  <li class="accordion-navigation">
-    <a href="#grid-customization"><h4>Customization</h4></a>
-    <div id="grid-customization" class="content">
+  </div>
+  <div id="grid-customization" class="content">
 
-      <h5 class="subheader">Grid Customization</h5>
-      <p>Customizing the grid is easy with the Sass variables provided in the <code>_settings.scss</code> file.</p>
-      <h6 class="subheader">SCSS</h6>
-      <pre><code class="language-scss"><div class="code-container">$row-<span class="attribute">width</span><span class="value">: rem-calc(<span class="number">1000</span>);</span>
+
+    <h4 class="subheader">Grid Customization</h4>
+    <p>Customizing the grid is easy with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+    <h6 class="subheader">SCSS</h6>
+    <pre><code class="language-scss"><div class="code-container">$row-<span class="attribute">width</span><span class="value">: rem-calc(<span class="number">1000</span>);</span>
 $column-gutter<span class="value">: rem-calc(<span class="number">30</span>);</span>
 $total-<span class="attribute">columns</span><span class="value">: <span class="number">12</span> ;</span></div></code></pre>
-      <br />
-      <h6>Basic</h6>
-      <p>You can use the <code>grid-row()</code> and <code>grid-column()</code> mixins to create your own rows and columns with semantic markup, like so:</p>
-      <div class="row">
-        <div class="large-6 columns">
-          <h6 class="subheader">SCSS</h6>
-          <pre><code class="language-scss"><div class="code-container"><span class="class">.custom-row-class</span> {
+    <br />
+    <h5>Basic</h5>
+    <p>You can use the <code>grid-row()</code> and <code>grid-column()</code> mixins to create your own rows and columns with semantic markup, like so:</p>
+    <div class="row">
+      <div class="large-6 columns">
+        <h6 class="subheader">SCSS</h6>
+        <pre><code class="language-scss"><div class="code-container"><span class="class">.custom-row-class</span> {
   <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-row</span>();</span>
   <span class="class">.custom-column-class</span> {
     <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-column</span>(<span class="number">12</span>);</span>
   }
 }</div></code></pre>
-        </div>
-        <div class="large-6 columns">
-          <h6 class="subheader">HTML</h6>
-          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"your-row-class-name"</span>&gt;</span>
+      </div>
+      <div class="large-6 columns">
+        <h6 class="subheader">HTML</h6>
+        <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"your-row-class-name"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"your-column-class-name"</span>&gt;</span>
     <span class="comment">&lt;!-- Your content goes here --&gt;</span>
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-        </div>
       </div>
-      <br />
-      <h6>Advanced</h6>
-      <p>You can further customize your grid columns using the provided options in the <code>grid-column()</code> mixin:</p>
-      <h6 class="subheader">Row Mixin Options</h6>
-      <pre><code class="language-scss"><div class="code-container"><span class="class">.your-class-name</span> {
+    </div>
+    <br />
+    <h5>Advanced</h5>
+    <p>You can further customize your grid columns using the provided options in the <code>grid-column()</code> mixin:</p>
+    <h6 class="subheader">Row Mixin Options</h6>
+    <pre><code class="language-scss"><div class="code-container"><span class="class">.your-class-name</span> {
   <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-row</span>($behavior:<span class="preprocessor"> nest</span>) //<span class="preprocessor"> Other</span><span class="preprocessor"> options</span><span class="preprocessor"> include</span><span class="preprocessor"> collapse</span><span class="preprocessor"> and</span><span class="preprocessor"> nest-collapse.</span>
   //<span class="preprocessor"> Default</span> $behavior<span class="preprocessor"> value</span><span class="preprocessor"> is</span><span class="preprocessor"> false</span>
 }</span></div></code></pre>
-      <h6 class="subheader">Column Mixin Options</hb>
-      <pre><code class="language-scss"><div class="code-container"><span class="class">.custom-grid-class</span> {
+    <h6 class="subheader">Column Mixin Options</hb>
+    <pre><code class="language-scss"><div class="code-container"><span class="class">.custom-grid-class</span> {
   <span class="at_rule">@<span class="keyword">include</span><span class="preprocessor"> grid-column</span>(
     //<span class="preprocessor"> Control</span><span class="preprocessor"> the</span><span class="preprocessor"> number</span><span class="preprocessor"> of</span><span class="preprocessor"> columns</span>
     $columns:<span class="number">4</span>,
@@ -454,10 +419,8 @@ $total-<span class="attribute">columns</span><span class="value">: <span class="
   );</span>
 }</div></code></pre>
 
-      <hr />
-    </div>
-  </li>
 
-</ul>
+  </div>
+</div>
 
 <hr />

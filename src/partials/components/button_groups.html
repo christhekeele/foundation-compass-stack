@@ -1,41 +1,58 @@
 <h2 id="button-groups">Button Groups</h2>
 <h3 class="subheader">Button groups are containers for related action items. They're great when you need to display a group of actions in a bar. These build off the button styles and work perfectly with the grid.</h3>
 
-<ul class="accordion" data-accordion>
+<dl class="tabs" data-tab="" data-options="deep_linking:true">
+  <dd class="active"><a href="#button-groups-basic">Basic</a></dd>
+  <dd><a href="#button-groups-styling">Styles</a></dd>
+  <dd><a href="#button-groups-advanced">Advanced</a></dd>
+  <dd><a href="#button-groups-stacking">Stacking</a></dd>
+  <dd><a href="#button-groups-bars">Bars</a></dd>
+  <dd><a href="#button-groups-customization">Customization</a></dd>
+</dl>
 
-  <li class="accordion-navigation">
-    <a href="#button-groups-basic"><h4>Basic</h4></a>
-    <div id="button-groups-basic" class="content">
+<div class="tabs-content">
+  <div id="button-groups-basic" class="content active">
 
-      <h5 class="subheader">Basic Button Groups</h5>
-      <p>You can create a button group using minimal markup.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- A default button-group --&gt;</span>
+    <h4 class="subheader">Basic Button Groups</h4>
+    <p>You can create a button group using minimal markup.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <ul class="button-group">
+      <li><a href="#" class="button">Button 1</a></li>
+      <li><a href="#" class="button">Button 2</a></li>
+      <li><a href="#" class="button">Button 3</a></li>
+    </ul>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- A default button-group --&gt;</span>
 <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <ul class="button-group">
-        <li><a href="#" class="button">Button 1</a></li>
-        <li><a href="#" class="button">Button 2</a></li>
-        <li><a href="#" class="button">Button 3</a></li>
-      </ul>
 
-      <hr />
-    </div>
-  </li>
 
-  <li class="accordion-navigation">
-    <a href="#button-groups-styling"><h4>Styles</h4></a>
-    <div id="button-groups-styling" class="content">
+  </div>
+  <div id="button-groups-styling" class="content">
 
-      <h5 class="subheader">Styling Button Groups</h5>
-      <p>Additional classes can be added to your button group to change its appearance.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- Radius Button Group --&gt;</span>
+
+    <h4 class="subheader">Styling Button Groups</h4>
+    <p>Additional classes can be added to your button group to change its appearance.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <ul class="button-group radius">
+      <li><a href="#" class="button">Button 1</a></li>
+      <li><a href="#" class="button">Button 2</a></li>
+      <li><a href="#" class="button">Button 3</a></li>
+      <li><a href="#" class="button">Button 4</a></li>
+    </ul>
+    <ul class="button-group round">
+      <li><a href="#" class="button">Button 1</a></li>
+      <li><a href="#" class="button">Button 2</a></li>
+      <li><a href="#" class="button">Button 3</a></li>
+      <li><a href="#" class="button">Button 4</a></li>
+    </ul>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- Radius Button Group --&gt;</span>
 <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group radius"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
@@ -49,33 +66,30 @@
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <ul class="button-group radius">
-        <li><a href="#" class="button">Button 1</a></li>
-        <li><a href="#" class="button">Button 2</a></li>
-        <li><a href="#" class="button">Button 3</a></li>
-        <li><a href="#" class="button">Button 4</a></li>
-      </ul>
-      <ul class="button-group round">
-        <li><a href="#" class="button">Button 1</a></li>
-        <li><a href="#" class="button">Button 2</a></li>
-        <li><a href="#" class="button">Button 3</a></li>
-        <li><a href="#" class="button">Button 4</a></li>
-      </ul>
 
-      <hr />
-    </div>
-  </li>
 
-  <li class="accordion-navigation">
-    <a href="#button-groups-advanced"><h4>Advanced</h4></a>
-    <div id="button-groups-advanced" class="content">
+  </div>
+  <div id="button-groups-advanced" class="content">
 
-      <h5 class="subheader">Advanced Button Groups</h5>
-      <p>Adding an <code>even</code> class with the specified number of buttons in that group allows the button group to evenly expand to the edges of its container. With Foundation classes you can use the even class up to <code>even-8</code>.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group even-3"</span>&gt;</span>
+
+    <h4 class="subheader">Advanced Button Groups</h4>
+    <p>Adding an <code>even</code> class with the specified number of buttons in that group allows the button group to evenly expand to the edges of its container. With Foundation classes you can use the even class up to <code>even-8</code>.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <ul class="button-group even-3">
+      <li><a href="#" class="button secondary">Button 1</a></li>
+      <li><a href="#" class="button secondary">Button 2</a></li>
+      <li><a href="#" class="button secondary">Button 3</a></li>
+    </ul>
+    <ul class="button-group round even-5">
+      <li><a href="#" class="button">Button 1</a></li>
+      <li><a href="#" class="button">Button 2</a></li>
+      <li><a href="#" class="button">Button 3</a></li>
+      <li><a href="#" class="button">Button 4</a></li>
+      <li><a href="#" class="button">Button 5</a></li>
+    </ul>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group even-3"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button secondary"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button secondary"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button secondary"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
@@ -88,38 +102,39 @@
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 5<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 6<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <ul class="button-group even-3">
-        <li><a href="#" class="button secondary">Button 1</a></li>
-        <li><a href="#" class="button secondary">Button 2</a></li>
-        <li><a href="#" class="button secondary">Button 3</a></li>
-      </ul>
-      <ul class="button-group round even-5">
-        <li><a href="#" class="button">Button 1</a></li>
-        <li><a href="#" class="button">Button 2</a></li>
-        <li><a href="#" class="button">Button 3</a></li>
-        <li><a href="#" class="button">Button 4</a></li>
-        <li><a href="#" class="button">Button 5</a></li>
-      </ul>
 
-      <hr />
+
+  </div>
+  <div id="button-groups-stacking" class="content">
+
+
+    <h4 class="subheader">Stacking Button Groups</h4>
+    <p>You can change the orientation of a button group with the <code>stack</code> classes.</p>
+    <ul>
+      <li><code>stack</code>: Stacks buttons vertically.</li>
+      <li><code>stack-for-small</code>: Stacks buttons vertically on small screens and horizontally on large screens.</li>
+    </ul>
+    <br />
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="row">
+      <div class="medium-6 columns">
+        <h6 for="">Stack</h6>
+        <ul class="stack button-group">
+          <li><a href="#" class="button">Button 1</a></li>
+          <li><a href="#" class="button">Button 2</a></li>
+        </ul>
+      </div>
+      <div class="medium-6 columns">
+        <h6 for="">Stack for Small</h6>
+        <ul class="stack-for-small round button-group">
+          <li><a href="#" class="secondary button">Button 1</a></li>
+          <li><a href="#" class="secondary button">Button 2</a></li>
+        </ul>
+      </div>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#button-groups-stacking"><h4>Stacking</h4></a>
-    <div id="button-groups-stacking" class="content">
-
-      <h5 class="subheader">Stacking Button Groups</h5>
-      <p>You can change the orientation of a button group with the <code>stack</code> classes.</p>
-      <ul>
-        <li><code>stack</code>: Stacks buttons vertically.</li>
-        <li><code>stack-for-small</code>: Stacks buttons vertically on small screens and horizontally on large screens.</li>
-      </ul>
-      <br />
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"stack button-group"</span>&gt;</span>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"stack button-group"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
@@ -127,40 +142,32 @@
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="row">
-        <div class="medium-6 columns">
-          <h6 for="">Stack</h6>
-          <ul class="stack button-group">
-            <li><a href="#" class="button">Button 1</a></li>
-            <li><a href="#" class="button">Button 2</a></li>
-          </ul>
-        </div>
-        <div class="medium-6 columns">
-          <h6 for="">Stack for Small</h6>
-          <ul class="stack-for-small round button-group">
-            <li><a href="#" class="secondary button">Button 1</a></li>
-            <li><a href="#" class="secondary button">Button 2</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <hr />
+
+  </div>
+  <div id="button-groups-bars" class="content">
+
+    <h4 class="subheader">Button Bars</h4>
+    <p>A button bar is a group of button groups, perfect for situations where you want groups of actions that are all related to a similar element or page. Simply wrap two or more button groups in a <code>.button-bar</code> and Foundation takes care of the rest.</p>
+    <br />
+    <h6>Basic</h6>
+    <p>You can create a button bar using minimal markup.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="button-bar">
+      <ul class="button-group">
+        <li><a href="#" class="small button">Button 1</a></li>
+        <li><a href="#" class="small button">Button 2</a></li>
+        <li><a href="#" class="small button">Button 3</a></li>
+      </ul>
+      <ul class="button-group">
+        <li><a href="#" class="small button">Button 1</a></li>
+        <li><a href="#" class="small button">Button 2</a></li>
+        <li><a href="#" class="small button">Button 3</a></li>
+      </ul>
     </div>
-  </li>
-
-  <li class="accordion-navigation">
-    <a href="#button-groups-bars"><h4>Bars</h4></a>
-    <div id="button-groups-bars" class="content">
-
-      <h5 class="subheader">Button Bars</h5>
-      <p>A button bar is a group of button groups, perfect for situations where you want groups of actions that are all related to a similar element or page. Simply wrap two or more button groups in a <code>.button-bar</code> and Foundation takes care of the rest.</p>
-      <br />
-      <h6>Basic</h6>
-      <p>You can create a button bar using minimal markup.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"button-bar"</span>&gt;</span>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"button-bar"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
     <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
@@ -172,25 +179,25 @@
     <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="button-bar">
-        <ul class="button-group">
-          <li><a href="#" class="small button">Button 1</a></li>
-          <li><a href="#" class="small button">Button 2</a></li>
-          <li><a href="#" class="small button">Button 3</a></li>
-        </ul>
-        <ul class="button-group">
-          <li><a href="#" class="small button">Button 1</a></li>
-          <li><a href="#" class="small button">Button 2</a></li>
-          <li><a href="#" class="small button">Button 3</a></li>
-        </ul>
-      </div>
-      <br />
-      <h6>Advanced</h6>
-      <p>Additional classes can be added to your button bar to change its appearance.</p>
-      <h6 class="subheader">HTML</h6>
-      <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- You can mix styles in a button bar if you want. --&gt;</span>
+    <br />
+    <h6>Advanced</h6>
+    <p>Additional classes can be added to your button bar to change its appearance.</p>
+    <h6 class="subheader">Rendered HTML</h6>
+    <div class="button-bar">
+      <ul class="button-group round">
+        <li><a href="#" class="small button secondary">Button 1</a></li>
+        <li><a href="#" class="small button secondary">Button 2</a></li>
+        <li><a href="#" class="small button secondary">Button 3</a></li>
+      </ul>
+      <ul class="button-group radius">
+        <li><a href="#" class="small button success">Button 1</a></li>
+        <li><a href="#" class="small button success">Button 2</a></li>
+        <li><a href="#" class="small button success">Button 3</a></li>
+      </ul>
+    </div>
+    <br />
+    <h6 class="subheader">HTML</h6>
+    <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- You can mix styles in a button bar if you want. --&gt;</span>
 <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"button-bar"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group round"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button secondary"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
@@ -203,42 +210,23 @@
     <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button success"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
-      <br />
-      <h6 class="subheader">Rendered HTML</h6>
-      <div class="button-bar">
-        <ul class="button-group round">
-          <li><a href="#" class="small button secondary">Button 1</a></li>
-          <li><a href="#" class="small button secondary">Button 2</a></li>
-          <li><a href="#" class="small button secondary">Button 3</a></li>
-        </ul>
-        <ul class="button-group radius">
-          <li><a href="#" class="small button success">Button 1</a></li>
-          <li><a href="#" class="small button success">Button 2</a></li>
-          <li><a href="#" class="small button success">Button 3</a></li>
-        </ul>
-      </div>
 
-      <hr />
-    </div>
-  </li>
 
-  <li class="accordion-navigation">
-    <a href="#button-groups-customization"><h4>Customization</h4></a>
-    <div id="button-groups-customization" class="content">
+  </div>
+  <div id="button-groups-customization" class="content">
 
-      <h5 class="subheader">Customizing Button Groups</h5>
-      <p>Button groups can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
-      <h6 class="subheader">SCSS</h6>
-      <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">button</span>-classes<span class="value">: $include-html-classes;</span>
+
+    <h4 class="subheader">Customizing Button Groups</h4>
+    <p>Button groups can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+    <h6 class="subheader">SCSS</h6>
+    <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">button</span>-classes<span class="value">: $include-html-classes;</span>
 
 <span class="comment">// Sets the margin for the right side by default, and the left margin if right-to-left direction is used</span>
 $<span class="tag">button</span>-bar-<span class="attribute">margin</span>-opposite<span class="value">: rem-calc(<span class="number">10</span>);</span>
 $<span class="tag">button</span>-group-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span></div></code></pre>
 
-      <hr />
-    </div>
-  </li>
 
-</ul>
+  </div>
+</div>
 
 <hr />

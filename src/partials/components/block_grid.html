@@ -1,47 +1,58 @@
 <h2 id="block-grid">Block Grid</h2>
 <h3 class="subheader">Block grids give you a way to evenly split contents of a list within the grid. If you wanted to create a row of five images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you.</h3>
 
-<ul class="accordion" data-accordion>
+<dl class="tabs" data-tab="" data-options="deep_linking:true">
+  <dd class="active"><a href="#block-grid-basic">Basic</a></dd>
+  <dd><a href="#block-grid-advanced">Advanced</a></dd>
+  <dd><a href="#block-grid-customization">Customization</a></dd>
+</dl>
 
-  <li class="accordion-navigation">
-    <a href="#block-grid-basic"><h4>Basic</h4></a>
-    <div id="block-grid-basic" class="content">
+<div class="tabs-content">
+  <div id="block-grid-basic" class="content active">
 
-      <h5 class="subheader">Basic Block Grids</h5>
-      <p>Use a simple <code>small-block-grid-#</code> class to code up the block grid and specify the number of items in a row.</p>
-      <div class="row">
-        <div class="large-6 columns">
-          <h6 class="subheader">HTML</h6>
-          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"small-block-grid-3"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
-        </div>
-        <div class="large-6 columns">
-          <h6 class="subheader">Rendered HTML</h6>
-          <ul class="small-block-grid-3">
-            <li><img class="th" src="../dist/assets/img/examples/satelite.jpg"></li>
-            <li><img class="th" src="../dist/assets/img/examples/space.jpg"></li>
-            <li><img class="th" src="../dist/assets/img/examples/spacewalk.jpg"></li>
-          </ul>
-        </div>
+    <h4 class="subheader">Basic Block Grids</h4>
+    <p>Use a simple <code>small-block-grid-#</code> class to code up the block grid and specify the number of items in a row.</p>
+    <div class="row">
+      <div class="large-6 columns">
+        <h6 class="subheader">Rendered HTML</h6>
+        <ul class="small-block-grid-3">
+          <li><img class="th" src="../dist/assets/img/examples/satelite.jpg"></li>
+          <li><img class="th" src="../dist/assets/img/examples/space.jpg"></li>
+          <li><img class="th" src="../dist/assets/img/examples/spacewalk.jpg"></li>
+        </ul>
       </div>
-
-      <hr />
+      <div class="large-6 columns">
+        <h6 class="subheader">HTML</h6>
+        <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"small-block-grid-3"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+      </div>
     </div>
-  </li>
 
-  <li class="accordion-navigation">
-    <a href="#block-grid-advanced"><h4>Advanced</h4></a>
-    <div id="block-grid-advanced" class="content">
 
-      <h5 class="subheader">Advanced Block Grids</h5>
-      <p>Use additional classes to specify a different number of items in a row for each screen size.</p>
-      <div class="row">
-        <div class="large-6 columns">
-          <h6 class="subheader">HTML</h6>
-          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"small-block-grid-2 medium-block-grid-3 large-block-grid-4"</span>&gt;</span>
+  </div>
+  <div id="block-grid-advanced" class="content">
+
+
+    <h4 class="subheader">Advanced Block Grids</h4>
+    <p>Use additional classes to specify a different number of items in a row for each screen size.</p>
+    <div class="row">
+      <div class="large-6 columns">
+        <h6 class="subheader">Rendered HTML</h6>
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+          <li><img class="th" src="../dist/assets/img/examples/comet-th.jpg"></li>
+          <li><img class="th" src="../dist/assets/img/examples/earth-th.jpg"></li>
+          <li><img class="th" src="../dist/assets/img/examples/launch-th.jpg"></li>
+          <li><img class="th" src="../dist/assets/img/examples/satelite-th.jpg"></li>
+          <li><img class="th" src="../dist/assets/img/examples/space-th.jpg"></li>
+          <li><img class="th" src="../dist/assets/img/examples/spacewalk-th.jpg"></li>
+        </ul>
+      </div>
+      <div class="large-6 columns">
+        <h6 class="subheader">HTML</h6>
+        <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"small-block-grid-2 medium-block-grid-3 large-block-grid-4"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
@@ -49,32 +60,18 @@
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="comment">&lt;!-- Your content goes here --&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
-        </div>
-        <div class="large-6 columns">
-          <h6 class="subheader">Rendered HTML</h6>
-          <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-            <li><img class="th" src="../dist/assets/img/examples/comet-th.jpg"></li>
-            <li><img class="th" src="../dist/assets/img/examples/earth-th.jpg"></li>
-            <li><img class="th" src="../dist/assets/img/examples/launch-th.jpg"></li>
-            <li><img class="th" src="../dist/assets/img/examples/satelite-th.jpg"></li>
-            <li><img class="th" src="../dist/assets/img/examples/space-th.jpg"></li>
-            <li><img class="th" src="../dist/assets/img/examples/spacewalk-th.jpg"></li>
-          </ul>
-        </div>
       </div>
-
-      <hr />
     </div>
-  </li>
 
-  <li class="accordion-navigation">
-    <a href="#block-grid-customization"><h4>Customization</h4></a>
-    <div id="block-grid-customization" class="content">
 
-      <h5 class="subheader">Customizing Block Grids</h5>
-      <p>Block grids can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
-      <h6 class="subheader">SCSS</h6>
-      <pre><code class="language-scss"><div class="code-container"><span class="comment">// We use this to control the maximum blocks and spacing </span>
+  </div>
+  <div id="block-grid-customization" class="content">
+
+
+    <h4 class="subheader">Customizing Block Grids</h4>
+    <p>Block grids can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+    <h6 class="subheader">SCSS</h6>
+    <pre><code class="language-scss"><div class="code-container"><span class="comment">// We use this to control the maximum blocks and spacing </span>
 $<span class="value">block</span>-grid-elements<span class="value">: <span class="number">12</span>;</span>
 $<span class="value">block</span>-grid-<span class="value">default</span>-spacing<span class="value">: rem-calc(<span class="number">20</span>);</span>
 $align-<span class="value">block</span>-grid-to-grid<span class="value">: false;</span> <span class="comment">//removes column gutter so edges of block grid align with grid</span>
@@ -82,10 +79,8 @@ $align-<span class="value">block</span>-grid-to-grid<span class="value">: false;
 <span class="comment">// Enables media queries for block-grid classes. Set to false if writing semantic HTML.</span>
 $<span class="value">block</span>-grid-media-queries<span class="value">: true;</span></div></code></pre>
 
-      <hr />
-    </div>
-  </li>
 
-</ul>
+  </div>
+</div>
 
 <hr />

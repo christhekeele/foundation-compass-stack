@@ -1,100 +1,97 @@
 <h2 id="breadcrumbs">Breadcrumbs</h2>
 <h3 class="subheader">Breadcrumbs come in handy to show a navigation trail for users clicking through a site or app. They'll fill out 100% of the width of their parent container.</h3>
 
-<ul class="accordion" data-accordion>
+<dl class="tabs" data-tab="" data-options="deep_linking:true">
+  <dd class="active"><a href="#breadcrumbs-basic">Basic</a></dd>
+  <dd><a href="#breadcrumbs-accessibility">Accessibility</a></dd>
+  <dd><a href="#breadcrumbs-customization">Customization</a></dd>
+</dl>
 
-  <li class="accordion-navigation">
-    <a href="#breadcrumbs-basic"><h4>Basic</h4></a>
-    <div id="breadcrumbs-basic" class="content">
+<div class="tabs-content">
+  <div id="breadcrumbs-basic" class="content active">
 
-      <h5 class="subheader">Basic Breadcrumbs</h5>
-      <p>Add a class of <code>.breadcrumbs</code> to a <code>ul</code> element. List items will automatically be styled, and you can add <code>.current</code> or <code>.unavailable</code> classes to list items to denote their state.</p>
-      <div class="row">
-        <div class="large-6 columns">
-          <h6 class="subheader">HTML</h6>
-          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"breadcrumbs"</span>&gt;</span>
+    <h4 class="subheader">Basic Breadcrumbs</h4>
+    <p>Add a class of <code>.breadcrumbs</code> to a <code>ul</code> element. List items will automatically be styled, and you can add <code>.current</code> or <code>.unavailable</code> classes to list items to denote their state.</p>
+    <div class="row">
+      <div class="large-6 columns">
+        <h6 class="subheader">Rendered HTML</h6>
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li class="unavailable"><a href="#">Gene Splicing</a></li>
+          <li class="current"><a href="#">Cloning</a></li>
+        </ul>
+      </div>
+      <div class="large-6 columns">
+        <h6 class="subheader">HTML</h6>
+        <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"breadcrumbs"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Features<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"unavailable"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Gene Splicing<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"current"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Cloning<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
-        </div>
-        <div class="large-6 columns">
-          <h6 class="subheader">Rendered HTML</h6>
-          <ul class="breadcrumbs">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li class="unavailable"><a href="#">Gene Splicing</a></li>
-            <li class="current"><a href="#">Cloning</a></li>
-          </ul>
-        </div>
       </div>
-      <p>You can also add a <code>.breadcrumbs</code> class to a <code>nav</code> element containing anchor links to get the same result.</p>
-      <div class="row">
-        <div class="large-6 columns">
-          <h6 class="subheader">HTML</h6>
-          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"breadcrumbs"</span>&gt;</span>
+    </div>
+    <p>You can also add a <code>.breadcrumbs</code> class to a <code>nav</code> element containing anchor links to get the same result.</p>
+    <div class="row">
+      <div class="large-6 columns">
+        <h6 class="subheader">Rendered HTML</h6>
+        <nav class="breadcrumbs">
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a class="unavailable" href="#">Gene Splicing</a>
+          <a class="current" href="#">Cloning</a>
+        </nav>
+      </div>
+      <div class="large-6 columns">
+        <h6 class="subheader">HTML</h6>
+        <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"breadcrumbs"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
   <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Features<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
   <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"unavailable"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Gene Splicing<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
   <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"current"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Cloning<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">nav</span>&gt;</span></div></code></pre>
-        </div>
-        <div class="large-6 columns">
-          <h6 class="subheader">Rendered HTML</h6>
-          <nav class="breadcrumbs">
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a class="unavailable" href="#">Gene Splicing</a>
-            <a class="current" href="#">Cloning</a>
-          </nav>
-        </div>
       </div>
-
-      <hr />
     </div>
-  </li>
 
-  <li class="accordion-navigation">
-    <a href="#breadcrumbs-accessibility"><h4>Accessibility</h4></a>
-    <div id="breadcrumbs-accessibility" class="content">
 
-      <h5 class="subheader">Accessible Breadcrumbs</h5>
-      <p>Use this snippet to make breadcrumbs more accessible. Adding the role attribute gives context to a screen reader. The <code>aria-label</code> attribute will allow a screen reader to call out what the component is to the user. We added some Scss so the screen reader skips the <code>/</code>. Using the Tab button, a user can navigate until they've reached the link below. (Use Shift+Tab to navigate back one step.)</p>
-      <p>If you are using an <code>unavailable</code> link, give it an aria-disabled attribute as in this example:</p>
-      <div class="row">
-        <div class="large-6 columns">
-          <h6 class="subheader">HTML</h6>
-          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"breadcrumbs"</span> <span class="attribute">role</span>=<span class="value">"menubar"</span> <span class="attribute">aria-label</span>=<span class="value">"breadcrumbs"</span>&gt;</span>
+  </div>
+  <div id="breadcrumbs-accessibility" class="content">
+
+
+    <h4 class="subheader">Accessible Breadcrumbs</h4>
+    <p>Use this snippet to make breadcrumbs more accessible. Adding the role attribute gives context to a screen reader. The <code>aria-label</code> attribute will allow a screen reader to call out what the component is to the user. We added some Scss so the screen reader skips the <code>/</code>. Using the Tab button, a user can navigate until they've reached the link below. (Use Shift+Tab to navigate back one step.)</p>
+    <p>If you are using an <code>unavailable</code> link, give it an aria-disabled attribute as in this example:</p>
+    <div class="row">
+      <div class="large-6 columns">
+        <h6 class="subheader">Rendered HTML</h6>
+        <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+          <li role="menuitem"><a href="#">Home</a></li>
+          <li role="menuitem"><a href="#">Features</a></li>
+          <li role="menuitem" class="unavailable" aria-disabled="true"><a href="#">Gene Splicing</a></li>
+          <li role="menuitem" class="current"><a href="#">Cloning</a></li>
+        </nav>
+      </div>
+      <div class="large-6 columns">
+        <h6 class="subheader">HTML</h6>
+        <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"breadcrumbs"</span> <span class="attribute">role</span>=<span class="value">"menubar"</span> <span class="attribute">aria-label</span>=<span class="value">"breadcrumbs"</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Features<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">class</span>=<span class="value">"unavailable"</span> <span class="attribute">role</span>=<span class="value">"button"</span> <span class="attribute">aria-disabled</span>=<span class="value">"true"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Gene Splicing<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
   <span class="tag">&lt;<span class="title">li</span> <span class="attribute">role</span>=<span class="value">"menuitem"</span> <span class="attribute">class</span>=<span class="value">"current"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Cloning<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">nav</span>&gt;</span></div></code></pre>
-        </div>
-        <div class="large-6 columns">
-          <h6 class="subheader">Rendered HTML</h6>
-          <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
-            <li role="menuitem"><a href="#">Home</a></li>
-            <li role="menuitem"><a href="#">Features</a></li>
-            <li role="menuitem" class="unavailable" aria-disabled="true"><a href="#">Gene Splicing</a></li>
-            <li role="menuitem" class="current"><a href="#">Cloning</a></li>
-          </nav>
-        </div>
       </div>
-
-      <hr />
     </div>
-  </li>
 
-  <li class="accordion-navigation">
-    <a href="#breadcrumbs-customization"><h4>Customization</h4></a>
-    <div id="breadcrumbs-customization" class="content">
 
-      <h5 class="subheader">Customizing Breadcrumbs</h5>
-      <p>Breadcrumbs can be easily customized using our Sass variables.</p>
-      <h6 class="subheader">SCSS</h6>
-      <pre><code class="language-scss"><div class="code-container"><span class="comment">//</span>
+  </div>
+  <div id="breadcrumbs-customization" class="content">
+
+
+    <h4 class="subheader">Customizing Breadcrumbs</h4>
+    <p>Breadcrumbs can be easily customized using our Sass variables.</p>
+    <h6 class="subheader">SCSS</h6>
+    <pre><code class="language-scss"><div class="code-container"><span class="comment">//</span>
 <span class="comment">// Breadcrumb Variables</span>
 <span class="comment">//</span>
 $include-<span class="tag">html</span>-<span class="tag">nav</span>-classes<span class="value">: $include-html-classes;</span>
@@ -125,9 +122,8 @@ $crumb-<span class="tag">link</span>-decor<span class="value">: underline;</span
 $crumb-slash-<span class="attribute">color</span><span class="value">: $base;</span>
 $crumb-slash<span class="value">: <span class="string">"/"</span>;</span></div></code></pre>
 
-      <hr />
-    </div>
-  </li>
 
-</ul>
+  </div>
+</div>
+
 <hr />
