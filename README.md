@@ -1,6 +1,8 @@
 # Foundation Sandbox
 
-This is a sandbox for your next web project using Foundation. It also comes with Grunt, Compass, and Assemble.
+This is a sandbox for building your next web project using Foundation. It also comes with Grunt, Compass, and Assemble as a starting point.
+
+[Preview the sandbox](http://christhekeele.github.io/foundation-sandbox) live to get a feel for what's included.
 
 ## Usage
 
@@ -29,7 +31,7 @@ Navigate into the directory:
 
 `cd foundation-sandbox`
 
-Install all the dependincies:
+Install all the dependencies:
 
 `npm install && bower install`
 
@@ -43,12 +45,11 @@ This will assemble all the pages and compile the Sass. You're set!
 
 * `src`: This is the directory you'll work in.
 * `src/assets`: All assets (scss, images, fonts, js, etc) go here.
-* `src/assets/scss/_settings.scss`: Foundation configuration settings go in here.
-* `src/assets/scss/sandbox.scss`: Styles that make the sandbox look good go here.
-* `src/assets/scss/app.scss`: Application styles go here. These are the ones you'll want to take home with you.
+* `src/assets/scss/_settings.scss`: Foundation configuration settings go in here. If you change them, you'll want to import this file into your app.
+* `src/assets/scss/app.scss`: Application styles go here. These are also ones you'll want to take home with you.
+* `src/assets/scss/sandbox.scss`: Styles that make the sandbox look good go here. Leave them be when exporting your customizations into your project.
 * `dist`: Static pages are assembled here. This is where you should view the site in your browser. **Don't edit these files directly. They will be overwritten!**
-* `pages`: This is where your Assemble HTML templates go.
-* `pages/index.html`: This is the landing page for your site, already kitted out with every Foundation component.
-* `partials`: This is where reusable templates that will be embedded in others go.
-* `partials/components`: This is where each Foundation component lives. Remove component partials from your `index.html` if you don't intend on using them to reduce clutter.
-
+* `pages`: This is where your Assemble HTML templates go, if you intent to build off of the sandbox instead of importing your customizations into another project..
+* `pages/index.html`: This is the landing page for the sandbox, already kitted out with every Foundation component.
+* `partials`: This is where reusable templates that can be embedded in others go.
+* `partials/components`: This is where each Foundation component lives. Remove component partial include directives from the `index.html` if you don't intend on using them to reduce clutter.
