@@ -1,0 +1,29 @@
+<section id="panels-customization" class="content">
+
+  <h4 class="subheader">Customizing Panels</h4>
+  <p>Panels can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-panel-classes<span class="value">: $include-html-classes !default;</span>
+
+<span class="comment">// We use these to control the background and border styles</span>
+$panel-bg<span class="value">: scale-color($white, $lightness: -<span class="number">5</span>%) !default;</span>
+$panel-<span class="attribute">border-style</span><span class="value">: solid !default;</span>
+$panel-<span class="attribute">border</span>-size<span class="value">: <span class="number">1</span>px !default;</span>
+
+<span class="comment">// We use this % to control how much we darken things on hover</span>
+$panel-function-factor<span class="value">: -<span class="number">11</span>% !default;</span>
+$panel-<span class="attribute">border-color</span><span class="value">: scale-color($panel-bg, $lightness: $panel-function-factor) !default;</span>
+
+<span class="comment">// We use these to set default inner padding and bottom margin</span>
+$panel-<span class="attribute">margin-bottom</span><span class="value">: rem-calc(<span class="number">20</span>) !default;</span>
+$panel-<span class="attribute">padding</span><span class="value">: rem-calc(<span class="number">20</span>) !default;</span>
+
+<span class="comment">// We use these to set default font colors</span>
+$panel-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: $oil !default;</span>
+$panel-<span class="attribute">font</span>-<span class="attribute">color</span>-alt<span class="value">: $white !default;</span>
+
+$panel-<span class="tag">header</span>-adjust<span class="value">: true !default;</span>
+$callout-panel-<span class="tag">link</span>-<span class="attribute">color</span><span class="value">: $primary-color !default;</span></div></code></pre>
+
+</section>

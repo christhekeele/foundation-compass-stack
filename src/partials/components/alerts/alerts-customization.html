@@ -1,0 +1,45 @@
+<section id="alerts-customization" class="content">
+
+  <h4 class="subheader">Customizing Alerts</h4>
+  <p>Alerts can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+
+  <h6 class="subheader">SCSS</h6>
+  <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-alert-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use this to control alert padding.</span>
+$alert-<span class="attribute">padding-top</span><span class="value">: rem-calc(<span class="number">11</span>);</span>
+$alert-<span class="attribute">padding</span>-<span class="value">default</span>-<span class="attribute">float</span><span class="value">: $alert-padding-top;</span>
+$alert-<span class="attribute">padding</span>-opposite-<span class="attribute">direction</span><span class="value">: $alert-padding-top + rem-calc(<span class="number">10</span>);</span>
+$alert-<span class="attribute">padding-bottom</span><span class="value">: $alert-padding-top + rem-calc(<span class="number">1</span>);</span>
+
+<span class="comment">// We use these to control text style.</span>
+$alert-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$alert-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">14</span>);</span>
+$alert-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+$alert-<span class="attribute">font</span>-<span class="attribute">color</span>-alt<span class="value">: scale-color($secondary-color, $lightness: -<span class="number">66</span>%);</span>
+
+<span class="comment">// We use this for close hover effect.</span>
+$alert-function-factor<span class="value">: -<span class="number">14</span>%;</span>
+
+<span class="comment">// We use these to control border styles.</span>
+$alert-<span class="attribute">border-style</span><span class="value">: solid;</span>
+$alert-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span>
+$alert-<span class="attribute">border-color</span><span class="value">: scale-color($primary-color, $lightness: $alert-function-factor);</span>
+$alert-<span class="attribute">bottom</span>-<span class="attribute">margin</span><span class="value">: rem-calc(<span class="number">20</span>);</span>
+
+<span class="comment">// We use these to style the close buttons</span>
+$alert-close-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#333</span>;</span>
+$alert-close-<span class="attribute">position</span><span class="value">: rem-calc(<span class="number">5</span>);</span>
+$alert-close-<span class="attribute">font-size</span><span class="value">: rem-calc(<span class="number">22</span>);</span>
+$alert-close-<span class="attribute">opacity</span><span class="value">: <span class="number">0.3</span>;</span>
+$alert-close-<span class="attribute">opacity</span>-hover<span class="value">: <span class="number">0.5</span>;</span>
+$alert-close-<span class="attribute">padding</span><span class="value">: <span class="number">5</span>px <span class="number">4</span>px <span class="number">4</span>px;</span>
+
+<span class="comment">// We use this to control border radius</span>
+$alert-radius<span class="value">: $global-radius;</span>
+
+<span class="comment">// We use this to control transition effects</span>
+$alert-<span class="attribute">transition</span>-speed<span class="value">: <span class="number">300</span>ms;</span>
+$alert-<span class="attribute">transition</span>-ease<span class="value">: ease-out;</span></div></code></pre>
+
+</section>

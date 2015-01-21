@@ -1,0 +1,27 @@
+<section id="alerts-accessibility" class="content">
+
+  <h4 class="subheader">Accessible Alerts</h4>
+  <p>To make your alerts conform to accessibility standards, use the markup below, which adds a handful of ARIA attributes to the alert container, and uses the <code>&lt;button&gt;</code> tag for the close button instead of <code>&lt;a&gt;</code>.</p>
+
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Rendered HTML</h6>
+      <div id="mainAlert1" data-alert="" class="alert-box" tabindex="0" aria-live="assertive" role="dialogalert">
+        Your content goes here
+        <button href="#" tabindex="0" class="close" aria-label="Close Alert">×</button>
+      </div>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"mainAlert1"</span> <span class="attribute">data-alert</span> <span class="attribute">class</span>=<span class="value">"alert-box"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span> <span class="attribute">aria-live</span>=<span class="value">"assertive"</span> <span class="attribute">role</span>=<span class="value">"dialogalert"</span>&gt;</span>
+  Your content goes here
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span> <span class="attribute">class</span>=<span class="value">"close"</span> <span class="attribute">aria-label</span>=<span class="value">"Close Alert"</span>&gt;</span>&amp;times;<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+
+    </div>
+  </div>
+
+</section>
