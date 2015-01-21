@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation Sandbox</title>
-    <link rel="stylesheet" href="assets//css/sandbox.css" />
     <link rel="stylesheet" href="assets//css/app.css" />
+    <link rel="stylesheet" href="assets//css/sandbox.css" />
     <script src="assets//js/modernizr.js"></script>
   </head>
 
@@ -74,9 +74,9 @@
     <div class="hide-for-small">
   <div class="sidebar">
 
-    <h5>Foundation Sandbox</h5>
+    <!-- <h5>Foundation Sandbox</h5>
 
-    <!-- <form>
+    <form>
       <input tabindex="1" id="autocomplete" type="search" placeholder="Search..." autocomplete="off">
     </form> -->
 
@@ -121,8 +121,8 @@
 
         <li class="divider"></li>
         <li class="heading">Buttons</li>
-        <!-- <li><a href="buttons.html" data-search="">Buttons</a></li> -->
-        <!-- <li><a href="button_groups.html" data-search="Button Bar">Button Groups</a></li> -->
+        <li><a href="#buttons" data-search="">Buttons</a></li>
+        <li><a href="#button-groups" data-search="Button Bar">Button Groups</a></li>
         <!-- <li><a href="split_buttons.html" data-search="">Split Buttons <span class="label">JS</span></a></li> -->
         <!-- <li><a href="dropdown_buttons.html" data-search="">Dropdown Buttons <span class="label">JS</span></a></li> -->
 
@@ -160,6 +160,8 @@
   </nav>
 
   <div class="large-10 columns">
+
+    <!-- Structure -->
 
     <h2 id="visibility-classes">Visibility Classes</h2>
 <h3 class="subheader">Visibility classes let you show or hide elements based on screen size or device orientation. You can use visibility classes to control which elements users see depending on their browsing environment.</h3>
@@ -860,6 +862,8 @@ $<span class="value">block</span>-grid-media-queries<span class="value">: true;<
 
 <hr />
 
+
+    <!-- Navigation -->
 
     <h2 id="topbar">Top Bar</h2>
 <h3 class="subheader">The Foundation Top Bar gives you a great way to display a complex navigation bar on small, medium or large screens.</h3>
@@ -1699,6 +1703,463 @@ $pagination-<span class="tag">link</span>-current-active-bg<span class="value">:
 
 <hr />
 
+
+    <!-- Media -->
+
+    <!-- Buttons -->
+
+    <h2 id="buttons">Buttons</h2>
+<h3 class="subheader">Buttons are convenient tools when you need more traditional actions. To that end, Foundation has many easy to use button styles that you can customize or override to fit your needs.</h3>
+
+<ul class="accordion" data-accordion>
+
+  <li class="accordion-navigation">
+    <a href="#buttons-basic"><h4>Basic</h4></a>
+    <div id="buttons-basic" class="content">
+
+      <h5 class="subheader">Basic Buttons</h5>
+      <p>You can create a button using minimal markup.</p>
+      <div class="row">
+        <div class="large-6 columns">
+          <h6 class="subheader">HTML</h6>
+          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div></code></pre>
+        </div>
+        <div class="large-6 columns">
+          <h6 class="subheader">Rendered HTML</h6>
+          <a href="#" class="button">Default Button</a><br>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#buttons-sizes"><h4>Sizes</h4></a>
+    <div id="buttons-sizes" class="content">
+
+      <h5 class="subheader">Button Sizing</h5>
+      <p>Additional classes can be added to your component to change its size and shape.</p>
+      <div class="row">
+        <div class="large-6 columns">
+          <h6 class="subheader">HTML</h6>
+          <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- Size Classes --&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button tiny"</span>&gt;</span>Tiny Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button small"</span>&gt;</span>Small Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span><br><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button disabled"</span>&gt;</span>Disabled Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button large"</span>&gt;</span>Large Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button expand"</span>&gt;</span>Expanded Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="comment">&lt;!-- Radius Classes --&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button round"</span>&gt;</span>Round Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button radius"</span>&gt;</span>Radius Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div></code></pre>
+        </div>
+        <div class="large-6 columns">
+          <h6 class="subheader">Rendered HTML</h6>
+          <div class="row">
+            <div class="small-6 columns">
+              <a href="#" class="button tiny">Tiny Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button small">Small Button</a><br>  </div>
+            <div class="small-6 columns">
+              <a href="#" class="button">Default Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button large">Large Button</a>
+            </div>
+            <div class="small-12 columns">
+              <a href="#" class="button expand">Expanded Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button round">Round Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button radius">Radius Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#buttons-colors"><h4>Colors</h4></a>
+    <div id="buttons-colors" class="content">
+
+      <h5 class="subheader">Button Colors</h5>
+      <p>Additional classes can be added to your component to change its color.</p>
+      <div class="row">
+        <div class="large-6 columns">
+          <h6 class="subheader">HTML</h6>
+          <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- Color Classes --&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button success"</span>&gt;</span>Success Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button secondary"</span>&gt;</span>Secondary Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button alert"</span>&gt;</span>Alert Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button info"</span>&gt;</span>Info Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button disabled"</span>&gt;</span>Disabled Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div></code></pre>
+        </div>
+        <div class="large-6 columns">
+          <h6 class="subheader">Rendered HTML</h6>
+          <div class="row">
+            <div class="small-6 columns">
+              <a href="#" class="button">Default Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button success">Success Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button secondary">Secondary Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button alert">Alert Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button info">Info Button</a>
+            </div>
+            <div class="small-6 columns">
+              <a href="#" class="button disabled">Disabled Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#buttons-accessibility"><h4>Accessibility</h4></a>
+    <div id="buttons-accessibility" class="content">
+
+      <h5 class="subheader">Accessible Buttons</h5>
+      <p>Use the snippet below to make buttons more accessible. You can use an <code>aria-label="submit form"</code> attribute to give a screen reader the literal purpose of the button if there is no text in it. If there is no <code>&lt;a href=""&gt;</code> then simply add the <code>tabindex="0"</code> to the div or span to make it focusable.</p>
+      <div class="row">
+        <div class="large-6 columns">
+          <h6 class="subheader">HTML</h6>
+          <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"button"</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">role</span>=<span class="value">"button"</span> <span class="attribute">aria-label</span>=<span class="value">"submit form"</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Submit<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">role</span>=<span class="value">"button"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Default Button<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+        </div>
+        <div class="large-6 columns">
+          <h6 class="subheader">Rendered HTML</h6>
+          <a role="button" href="#" class="button">Default Button</a>
+          <a role="button" aria-label="submit form" href="#" class="button">Submit</a>
+          <div role="button" tabindex="0" class="button">Default Button</div>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#buttons-customization"><h4>Customization</h4></a>
+    <div id="buttons-customization" class="content">
+
+      <h5 class="subheader">Customizing Buttons</h5>
+      <p>Buttons can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+      <h6 class="subheader">SCSS</h6>
+      <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">button</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// We use these to build padding for buttons.</span>
+$<span class="tag">button</span>-med<span class="value">: rem-calc(<span class="number">12</span>);</span>
+$<span class="tag">button</span>-tny<span class="value">: rem-calc(<span class="number">7</span>);</span>
+$<span class="tag">button</span>-sml<span class="value">: rem-calc(<span class="number">9</span>);</span>
+$<span class="tag">button</span>-lrg<span class="value">: rem-calc(<span class="number">16</span>);</span>
+
+<span class="comment">// We use this to control the display property.</span>
+$<span class="tag">button</span>-<span class="attribute">display</span><span class="value">: inline-block;</span>
+$<span class="tag">button</span>-<span class="attribute">margin-bottom</span><span class="value">: rem-calc(<span class="number">20</span>);</span>
+
+<span class="comment">// We use these to control button text styles.</span>
+$<span class="tag">button</span>-<span class="attribute">font-family</span><span class="value">: inherit;</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-<span class="attribute">color</span><span class="value">: <span class="hexcolor">#fff</span>;</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-<span class="attribute">color</span>-alt<span class="value">: <span class="hexcolor">#333</span>;</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-med<span class="value">: rem-calc(<span class="number">16</span>);</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-tny<span class="value">: rem-calc(<span class="number">11</span>);</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-sml<span class="value">: rem-calc(<span class="number">13</span>);</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-lrg<span class="value">: rem-calc(<span class="number">20</span>);</span>
+$<span class="tag">button</span>-<span class="attribute">font-weight</span><span class="value">: bold;</span>
+$<span class="tag">button</span>-<span class="attribute">font</span>-align<span class="value">: center;</span>
+
+<span class="comment">// We use these to control various hover effects.</span>
+$<span class="tag">button</span>-function-factor<span class="value">: <span class="number">10</span>%;</span>
+
+<span class="comment">// We use these to control button border styles.</span>
+$<span class="tag">button</span>-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span>
+$<span class="tag">button</span>-<span class="attribute">border-style</span><span class="value">: solid;</span>
+
+<span class="comment">// We use this to set the default radius used throughout the core.</span>
+$<span class="tag">button</span>-radius<span class="value">: $global-radius;</span>
+$<span class="tag">button</span>-round<span class="value">: $global-rounded;</span>
+
+<span class="comment">// We use this to set default opacity and cursor for disabled buttons.</span>
+$<span class="tag">button</span>-<span class="value">disabled</span>-<span class="attribute">opacity</span><span class="value">: <span class="number">0.6</span>;</span>
+$<span class="tag">button</span>-<span class="value">disabled</span>-<span class="attribute">cursor</span><span class="value">: $cursor-default-value;</span></div></code></pre>
+
+      <hr />
+    </div>
+  </li>
+
+</ul>
+
+<hr />
+
+
+    <h2 id="button-groups">Button Groups</h2>
+<h3 class="subheader">Button groups are containers for related action items. They're great when you need to display a group of actions in a bar. These build off the button styles and work perfectly with the grid.</h3>
+
+<ul class="accordion" data-accordion>
+
+  <li class="accordion-navigation">
+    <a href="#button-groups-basic"><h4>Basic</h4></a>
+    <div id="button-groups-basic" class="content">
+
+      <h5 class="subheader">Basic Button Groups</h5>
+      <p>You can create a button group using minimal markup.</p>
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- A default button-group --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+      <br />
+      <h6 class="subheader">Rendered HTML</h6>
+      <ul class="button-group">
+        <li><a href="#" class="button">Button 1</a></li>
+        <li><a href="#" class="button">Button 2</a></li>
+        <li><a href="#" class="button">Button 3</a></li>
+      </ul>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#button-groups-styling"><h4>Styles</h4></a>
+    <div id="button-groups-styling" class="content">
+
+      <h5 class="subheader">Styling Button Groups</h5>
+      <p>Additional classes can be added to your button group to change its appearance.</p>
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- Radius Button Group --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group radius"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="comment">&lt;!-- Rounded Button Group --&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group round"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+      <br />
+      <h6 class="subheader">Rendered HTML</h6>
+      <ul class="button-group radius">
+        <li><a href="#" class="button">Button 1</a></li>
+        <li><a href="#" class="button">Button 2</a></li>
+        <li><a href="#" class="button">Button 3</a></li>
+        <li><a href="#" class="button">Button 4</a></li>
+      </ul>
+      <ul class="button-group round">
+        <li><a href="#" class="button">Button 1</a></li>
+        <li><a href="#" class="button">Button 2</a></li>
+        <li><a href="#" class="button">Button 3</a></li>
+        <li><a href="#" class="button">Button 4</a></li>
+      </ul>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#button-groups-advanced"><h4>Advanced</h4></a>
+    <div id="button-groups-advanced" class="content">
+
+      <h5 class="subheader">Advanced Button Groups</h5>
+      <p>Adding an <code>even</code> class with the specified number of buttons in that group allows the button group to evenly expand to the edges of its container. With Foundation classes you can use the even class up to <code>even-8</code>.</p>
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group even-3"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button secondary"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button secondary"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button secondary"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group round even-6"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 5<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 6<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+      <br />
+      <h6 class="subheader">Rendered HTML</h6>
+      <ul class="button-group even-3">
+        <li><a href="#" class="button secondary">Button 1</a></li>
+        <li><a href="#" class="button secondary">Button 2</a></li>
+        <li><a href="#" class="button secondary">Button 3</a></li>
+      </ul>
+      <ul class="button-group round even-5">
+        <li><a href="#" class="button">Button 1</a></li>
+        <li><a href="#" class="button">Button 2</a></li>
+        <li><a href="#" class="button">Button 3</a></li>
+        <li><a href="#" class="button">Button 4</a></li>
+        <li><a href="#" class="button">Button 5</a></li>
+      </ul>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#button-groups-stacking"><h4>Stacking</h4></a>
+    <div id="button-groups-stacking" class="content">
+
+      <h5 class="subheader">Stacking Button Groups</h5>
+      <p>You can change the orientation of a button group with the <code>stack</code> classes.</p>
+      <ul>
+        <li><code>stack</code>: Stacks buttons vertically.</li>
+        <li><code>stack-for-small</code>: Stacks buttons vertically on small screens and horizontally on large screens.</li>
+      </ul>
+      <br />
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"stack button-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"stack-for-small round secondary button-group"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></div></code></pre>
+      <br />
+      <h6 class="subheader">Rendered HTML</h6>
+      <div class="row">
+        <div class="medium-6 columns">
+          <h6 for="">Stack</h6>
+          <ul class="stack button-group">
+            <li><a href="#" class="button">Button 1</a></li>
+            <li><a href="#" class="button">Button 2</a></li>
+          </ul>
+        </div>
+        <div class="medium-6 columns">
+          <h6 for="">Stack for Small</h6>
+          <ul class="stack-for-small round button-group">
+            <li><a href="#" class="secondary button">Button 1</a></li>
+            <li><a href="#" class="secondary button">Button 2</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#button-groups-bars"><h4>Bars</h4></a>
+    <div id="button-groups-bars" class="content">
+
+      <h5 class="subheader">Button Bars</h5>
+      <p>A button bar is a group of button groups, perfect for situations where you want groups of actions that are all related to a similar element or page. Simply wrap two or more button groups in a <code>.button-bar</code> and Foundation takes care of the rest.</p>
+      <br />
+      <h6>Basic</h6>
+      <p>You can create a button bar using minimal markup.</p>
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"button-bar"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+      <br />
+      <h6 class="subheader">Rendered HTML</h6>
+      <div class="button-bar">
+        <ul class="button-group">
+          <li><a href="#" class="small button">Button 1</a></li>
+          <li><a href="#" class="small button">Button 2</a></li>
+          <li><a href="#" class="small button">Button 3</a></li>
+        </ul>
+        <ul class="button-group">
+          <li><a href="#" class="small button">Button 1</a></li>
+          <li><a href="#" class="small button">Button 2</a></li>
+          <li><a href="#" class="small button">Button 3</a></li>
+        </ul>
+      </div>
+      <br />
+      <h6>Advanced</h6>
+      <p>Additional classes can be added to your button bar to change its appearance.</p>
+      <h6 class="subheader">HTML</h6>
+      <pre><code class="language-html"><div class="code-container"><span class="comment">&lt;!-- You can mix styles in a button bar if you want. --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"button-bar"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group round"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button secondary"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button secondary"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button secondary"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"button-group radius"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button success"</span>&gt;</span>Button 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button success"</span>&gt;</span>Button 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"small button success"</span>&gt;</span>Button 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></code></pre>
+      <br />
+      <h6 class="subheader">Rendered HTML</h6>
+      <div class="button-bar">
+        <ul class="button-group round">
+          <li><a href="#" class="small button secondary">Button 1</a></li>
+          <li><a href="#" class="small button secondary">Button 2</a></li>
+          <li><a href="#" class="small button secondary">Button 3</a></li>
+        </ul>
+        <ul class="button-group radius">
+          <li><a href="#" class="small button success">Button 1</a></li>
+          <li><a href="#" class="small button success">Button 2</a></li>
+          <li><a href="#" class="small button success">Button 3</a></li>
+        </ul>
+      </div>
+
+      <hr />
+    </div>
+  </li>
+
+  <li class="accordion-navigation">
+    <a href="#button-groups-customization"><h4>Customization</h4></a>
+    <div id="button-groups-customization" class="content">
+
+      <h5 class="subheader">Customizing Button Groups</h5>
+      <p>Button groups can be easily customized with the Sass variables provided in the <code>_settings.scss</code> file.</p>
+      <h6 class="subheader">SCSS</h6>
+      <pre><code class="language-scss"><div class="code-container">$include-<span class="tag">html</span>-<span class="tag">button</span>-classes<span class="value">: $include-html-classes;</span>
+
+<span class="comment">// Sets the margin for the right side by default, and the left margin if right-to-left direction is used</span>
+$<span class="tag">button</span>-bar-<span class="attribute">margin</span>-opposite<span class="value">: rem-calc(<span class="number">10</span>);</span>
+$<span class="tag">button</span>-group-<span class="attribute">border-width</span><span class="value">: <span class="number">1</span>px;</span></div></code></pre>
+
+      <hr />
+    </div>
+  </li>
+
+</ul>
+
+<hr />
+
+
+    <!-- Typography -->
+
+    <!-- Callouts & Prompts -->
+
+    <!-- Content -->
 
     <h2 id="tables">Tables</h2>
 <h3 class="subheader">Okay, they're not the sexiest things ever, but tables get the job done (for tabular data, of course).</h3>

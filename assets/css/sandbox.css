@@ -14095,3 +14095,8 @@ img.round-margin {
 .left-off-canvas-menu {
   transform: translate3d(-100.5%, 0, 0);
 }
+
+/* line 8698, ../../../src/assets/scss/sandbox.scss */
+h6 {
+  font-weight: bold;
+}
