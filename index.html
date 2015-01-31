@@ -12,46 +12,274 @@
 
   <body>
 
-    <nav class="top-bar" data-topbar role="navigation">
+    <div class="sticky">
 
-      <ul class="title-area">
+  <a class="show-for-large-up" href="https://github.com/christhekeele/foundation-sandbox"><img style="z-index: 1000; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+  
+  <nav class="top-bar" data-topbar role="navigation">
 
-        <li class="name">
-          <h1><a href="#">Foundation Sandbox</a></h1>
+    <ul class="title-area">
+
+      <li class="name">
+        <h1><a href="#top">Foundation Sandbox</a></h1>
+      </li>
+
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+
+    </ul>
+
+    <section class="top-bar-section">
+
+      <!-- Right Nav Section -->
+      <!-- <ul class="right">
+
+        <li class="active"><a href="#">Right Button Active</a></li>
+
+        <li class="has-dropdown">
+          <a href="#">Right Button Dropdown</a>
+          <ul class="dropdown">
+            <li><a href="#">First link in dropdown</a></li>
+            <li class="active"><a href="#">Active link in dropdown</a></li>
+          </ul>
         </li>
 
-        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul> -->
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+
+        <li class="has-dropdown">
+          <a>Structure</a>
+          <ul class="dropdown">
+
+            <li class="has-dropdown">
+              <a href="#visibility">Visibility</a>
+              <ul class="dropdown">
+                <li><a href="#visibility-show">Show</a></li>
+                <li><a href="#visibility-hide">Hide</a></li>
+                <li><a href="#visibility-orientation">Orientation</a></li>
+                <li><a href="#visibility-touch">Touch</a></li>
+                <li><a href="#visibility-print">Print</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#grid">Grid</a>
+              <ul class="dropdown">
+                <li><a href="#grid-preview">Preview</a></li>
+                <li><a href="#grid-basic">Basic</a></li>
+                <li><a href="#grid-incomplete">Incomplete</a></li>
+                <li><a href="#grid-collapsable">Collapsable</a></li>
+                <li><a href="#grid-centering">Centering</a></li>
+                <li><a href="#grid-reordering">Re-Ordering</a></li>
+                <li><a href="#grid-customization">Customization</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#block-grid">Block Grid</a>
+              <ul class="dropdown">
+                <li><a href="#block-grid-preview">Preview</a></li>
+                <li><a href="#block-grid-basic">Basic</a></li>
+                <li><a href="#block-grid-advanced">Advanced</a></li>
+                <li><a href="#block-grid-customization">Customization</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a>Navigation</a>
+          <ul class="dropdown">
+
+            <li class="has-dropdown">
+              <a href="#topbar">Top Bar</a>
+              <ul class="dropdown">
+                <li><a href="#topbar-preview">Preview</a></li>
+                <li><a href="#topbar-basic">Basic</a></li>
+                <li><a href="#topbar-advanced">Advanced</a></li>
+                <li><a href="#topbar-positioning">Positioning</a></li>
+                <li><a href="#topbar-builtins">Builtins</a></li>
+                <li><a href="#topbar-accessibility">Accessibility</a></li>
+                <li><a href="#topbar-customization">Customization</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#breadcrumbs">Breadcrumbs</a>
+              <ul class="dropdown">
+                <li><a href="#breadcrumbs-preview">Preview</a></li>
+                <li><a href="#breadcrumbs-basic">Basic</a></li>
+                <li><a href="#breadcrumbs-accessibility">Accessibility</a></li>
+                <li><a href="#breadcrumbs-customization">Customization</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#pagination">Pagination</a>
+              <ul class="dropdown">
+                <li><a href="#pagination-preview">Preview</a></li>
+                <li><a href="#pagination-basic">Basic</a></li>
+                <li><a href="#pagination-advanced">Advanced</a></li>
+                <li><a href="#pagination-accessibility">Accessibility</a></li>
+                <li><a href="#pagination-customization">Customization</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a>Media</a>
+          <ul class="dropdown"></ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a>Forms</a>
+          <ul class="dropdown"></ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a>Buttons</a>
+          <ul class="dropdown">
+
+            <li class="has-dropdown">
+              <a href="#buttons">Buttons</a>
+              <ul class="dropdown">
+                <li><a href="#buttons-preview">Preview</a></li>
+                <li><a href="#buttons-basic">Basic</a></li>
+                <li><a href="#buttons-sizes">Sizes</a></li>
+                <li><a href="#buttons-colors">Colors</a></li>
+                <li><a href="#buttons-accessibility">Accessibility</a></li>
+                <li><a href="#buttons-customization">Customization</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#button-groups">Button Groups</a>
+              <ul class="dropdown">
+                <li><a href="#button-groups-preview">Preview</a></li>
+                <li><a href="#button-groups-basic">Basic</a></li>
+                <li><a href="#button-groups-advanced">Advanced</a></li>
+                <li><a href="#button-groups-styling">Styles</a></li>
+                <li><a href="#button-groups-stacking">Stacking</a></li>
+                <li><a href="#button-groups-bars">Bars</a></li>
+                <li><a href="#button-groups-customization">Customization</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#split-buttons">Split Buttons</a>
+              <ul class="dropdown">
+                <li><a href="#split-buttons-preview">Preview</a></li>
+                <li><a href="#split-buttons-basic">Basic</a></li>
+                <li><a href="#split-buttons-advanced">Advanced</a></li>
+                <li><a href="#split-buttons-custom-pip">Custom Pip</a></li>
+                <li><a href="#split-buttons-customization">Customization</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a>Typography</a>
+          <ul class="dropdown">
+
+            <li class="has-dropdown">
+              <a href="#type">Type</a>
+              <ul class="dropdown">
+                <li><a href="#type-preview">Preview</a></li>
+                <li><a href="#type-headers">Headers</a></li>
+                <li><a href="#type-copy">Copy</a></li>
+                <li><a href="#type-lists">Lists</a></li>
+                <li><a href="#type-vcards">V-Cards</a></li>
+                <li><a href="#type-customization">Customization</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a>Callouts & Prompts</a>
+          <ul class="dropdown">
+
+            <li class="has-dropdown">
+              <a href="#alerts">Alerts</a>
+              <ul class="dropdown">
+                <li><a href="#alerts-preview">Preview</a></li>
+                <li><a href="#alerts-basic">Basic</a></li>
+                <li><a href="#alerts-advanced">Advanced</a></li>
+                <li><a href="#alerts-accessibility">Accessibility</a></li>
+                <li><a href="#alerts-customization">Customization</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#panels">Panels</a>
+              <ul class="dropdown">
+                <li><a href="#panels-preview">Preview</a></li>
+                <li><a href="#panels-basic">Basic</a></li>
+                <li><a href="#panels-advanced">Advanced</a></li>
+                <li><a href="#panels-customization">Customization</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a>Content</a>
+          <ul class="dropdown">
+
+            <li class="has-dropdown">
+              <a href="#tables">Tables</a>
+              <ul class="dropdown">
+                <li><a href="#tables-preview">Preview</a></li>
+                <li><a href="#tables-basic">Basic</a></li>
+                <li><a href="#tables-accessibility">Accessibility</a></li>
+                <li><a href="#tables-customization">Customization</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#accordion">Accordion</a>
+              <ul class="dropdown">
+                <li><a href="#accordion-preview">Preview</a></li>
+                <li><a href="#accordion-basic">Basic</a></li>
+                <li><a href="#accordion-distributed">Distributed</a></li>
+                <li><a href="#accordion-callbacks">Callbacks</a></li>
+                <li><a href="#accordion-customization">Customization</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#tabs">Tabs</a>
+              <ul class="dropdown">
+                <li><a href="#tabs-preview">Preview</a></li>
+                <li><a href="#tabs-horizontal">Horizontal</a></li>
+                <li><a href="#tabs-vertical">Vertical</a></li>
+                <li><a href="#tabs-advanced">Advanced</a></li>
+                <li><a href="#tabs-accessibility">Accessibility</a></li>
+                <li><a href="#tabs-customization">Customization</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
 
       </ul>
 
-      <section class="top-bar-section">
+    </section>
 
-        <!-- Right Nav Section -->
-        <ul class="right">
+  </nav>
+</div>
 
-          <li class="active"><a href="#">Right Button Active</a></li>
 
-          <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
-            </ul>
-          </li>
-
-        </ul>
-
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="#">Left Nav Button</a></li>
-        </ul>
-
-      </section>
-
-    </nav>
-
-    <section role="main">
+    <section id="top" role="main">
       <div class="row">
 
   <div class="large-12 columns">
@@ -73,6 +301,9 @@
   </p>
   <p>
     Every component displays the full set of Foundation documentation to assist you in its customization.
+  </p>
+  <p>
+    Read the documentation <a href="https://github.com/christhekeele/foundation-sandbox">here</a>.
   </p>
 
 </div>
@@ -97,7 +328,7 @@
       <ul class="side-nav accordion" data-accordion>
 
         <li class="divider"></li>
-        <li class="heading">Structure</li>
+        <li id="structure-components" class="heading">Structure</li>
         <!-- <li><a href="" data-search="Breakpoints">Media Queries</a></li> -->
         <li><a href="#visibility" data-search="">Visibility</a></li>
         <li><a href="#grid" data-search="">Grid</a></li>
@@ -108,7 +339,7 @@
         <!-- <li><a href="rtl.html" data-search="RTL">Right-to-Left Support</a></li> -->
 
         <li class="divider"></li>
-        <li class="heading">Navigation</li>
+        <li id="navigation-components" class="heading">Navigation</li>
         <!-- <li><a href="offcanvas.html" data-search="Off Canvas">Off-canvas <span class="label">JS</span></a></li> -->
         <li><a href="#topbar" data-search="Nav Bar,Navigation,Sticky">Top Bar <span class="label">JS</span></a></li>
         <!-- <li><a href="icon-bar.html" data-search="">Icon Bar</a></li> -->
@@ -119,35 +350,35 @@
         <li><a href="#pagination" data-search="">Pagination</a></li>
 
         <li class="divider"></li>
-        <li class="heading">Media</li>
+        <li id="media-components" class="heading">Media</li>
         <!-- <li><a href="orbit.html" data-search="Carousel,Slider,Slideshow">Orbit Slider <span class="label">JS</span></a></li> -->
         <!-- <li><a href="thumbnails.html" data-search="Images">Thumbnails</a></li> -->
         <!-- <li><a href="clearing.html" data-search="Responsive Lightbox,Lightbox">Clearing Lightbox <span class="label">JS</span></a></li> -->
         <!-- <li><a href="flex_video.html" data-search="Responsive Video">Flex Video</a></li> -->
 
         <li class="divider"></li>
-        <li class="heading">Forms</li>
+        <li id="form-components" class="heading">Forms</li>
         <!-- <li><a href="forms.html" data-search="">Forms</a></li> -->
         <!-- <li><a href="switch.html" data-search="">Switches</a></li> -->
         <!-- <li><a href="range_slider.html" data-search="Range Slider">Range Sliders <span class="label">JS</span></a></li> -->
         <!-- <li><a href="abide.html" data-search="Form Validation,Field Validation">Abide Validation <span class="label">JS</span></a></li> -->
 
         <li class="divider"></li>
-        <li class="heading">Buttons</li>
+        <li id="button-components" class="heading">Buttons</li>
         <li><a href="#buttons" data-search="">Buttons</a></li>
         <li><a href="#button-groups" data-search="Button Bar">Button Groups</a></li>
         <li><a href="#split-buttons" data-search="">Split Buttons <span class="label">JS</span></a></li>
         <!-- <li><a href="dropdown_buttons.html" data-search="">Dropdown Buttons <span class="label">JS</span></a></li> -->
 
         <li class="divider"></li>
-        <li class="heading">Typography</li>
+        <li id="typography-components" class="heading">Typography</li>
         <li><a href="#type" data-search="Typography,Type-setting,Composition">Type</a></li>
         <!-- <li><a href="inline_lists.html" data-search="Lists">Inline Lists</a></li> -->
         <!-- <li><a href="labels.html" data-search="Tags">Labels</a></li> -->
         <!-- <li><a href="keystrokes.html" data-search="">Keystrokes</a></li> -->
 
         <li class="divider"></li>
-        <li class="heading">Callouts &amp; Prompts</li>
+        <li id="callout-components" class="heading">Callouts &amp; Prompts</li>
         <!-- <li><a href="reveal.html" data-search="Modal">Reveal Modal <span class="label">JS</span></a></li> -->
         <li><a href="#alerts" data-search="Error,Success,Warning">Alerts <span class="label">JS</span></a></li>
         <li><a href="#panels" data-search="Wells">Panels</a></li>
@@ -155,7 +386,7 @@
         <!-- <li><a href="joyride.html" data-search="Tooltip Tour,Guider,Tooltip Walk-through">Joyride <span class="label">JS</span></a></li> -->
 
         <li class="divider"></li>
-        <li class="heading">Content</li>
+        <li id="content-components" class="heading">Content</li>
         <!-- <li><a href="dropdown.html" data-search="">Dropdowns <span class="label">JS</span></a></li> -->
         <!-- <li><a href="pricing_tables.html" data-search="">Pricing Tables</a></li> -->
         <!-- <li><a href="progress_bars.html" data-search="">Progress Bars</a></li> -->
@@ -893,9 +1124,9 @@ $total-<span class="attribute">columns</span><span class="value">: <span class="
 
       <h6 class="subheader">Rendered HTML</h6>
       <ul class="small-block-grid-3">
-        <li><img class="th" src="assets/img/examples/satelite.jpg"></li>
-        <li><img class="th" src="assets/img/examples/space.jpg"></li>
-        <li><img class="th" src="assets/img/examples/spacewalk.jpg"></li>
+        <li><img class="th" src="assets//img/examples/satelite.jpg"></li>
+        <li><img class="th" src="assets//img/examples/space.jpg"></li>
+        <li><img class="th" src="assets//img/examples/spacewalk.jpg"></li>
       </ul>
 
     </div>
@@ -923,12 +1154,12 @@ $total-<span class="attribute">columns</span><span class="value">: <span class="
 
       <h6 class="subheader">Rendered HTML</h6>
       <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-        <li><img class="th" src="assets/img/examples/comet-th.jpg"></li>
-        <li><img class="th" src="assets/img/examples/earth-th.jpg"></li>
-        <li><img class="th" src="assets/img/examples/launch-th.jpg"></li>
-        <li><img class="th" src="assets/img/examples/satelite-th.jpg"></li>
-        <li><img class="th" src="assets/img/examples/space-th.jpg"></li>
-        <li><img class="th" src="assets/img/examples/spacewalk-th.jpg"></li>
+        <li><img class="th" src="assets//img/examples/comet-th.jpg"></li>
+        <li><img class="th" src="assets//img/examples/earth-th.jpg"></li>
+        <li><img class="th" src="assets//img/examples/launch-th.jpg"></li>
+        <li><img class="th" src="assets//img/examples/satelite-th.jpg"></li>
+        <li><img class="th" src="assets//img/examples/space-th.jpg"></li>
+        <li><img class="th" src="assets//img/examples/spacewalk-th.jpg"></li>
       </ul>
 
     </div>
@@ -2891,135 +3122,140 @@ $split-<span class="tag">button</span>-pip-<span class="value">default</span>-<s
 
   <h6 class="subheader">Headers</h6>
   <div class="type-demo">
-    <h1>h1. This is a very large header.</h1>
-    <h2>h2. This is a large header.</h2>
-    <h3>h3. This is a medium header.</h3>
-    <h4>h4. This is a moderate header.</h4>
-    <h5>h5. This is a small header.</h5>
-    <h6>h6. This is a tiny header.</h6>
+    <h1>h1. This is a very large header <small>with a small bit.</small></h1>
+    <h1 class="subheader">h1. Here it is as a subheader.</h1>
+    <h2>h2. This is a large header <small>with a small bit.</small></h2>
+    <h2 class="subheader">h2. Here it is as a subheader.</h2>
+    <h3>h3. This is a medium header <small>with a small bit.</small></h3>
+    <h3 class="subheader">h3. Here it is as a subheader.</h3>
+    <h4>h4. This is a moderate header <small>with a small bit.</small></h4>
+    <h4 class="subheader">h4. Here it is as a subheader.</h4>
+    <h5>h5. This is a small header <small>with a small bit.</small></h5>
+    <h5 class="subheader">h5. Here it is as a subheader.</h5>
+    <h6>h6. This is a tiny header <small>with a small bit.</small></h6>
+    <h6 class="subheader">h6. Here it is as a subheader.</h6>
   </div>
 
   <br />
 
-  <h6 class="subheader">Subheaders</h6>
-  <div class="type-demo">
-    <h1 class="subheader">h1.subheader</h1>
-    <h2 class="subheader">h2.subheader</h2>
-    <h3 class="subheader">h3.subheader</h3>
-    <h4 class="subheader">h4.subheader</h4>
-    <h5 class="subheader">h5.subheader</h5>
-    <h6 class="subheader">h6.subheader</h6>
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Copy (paragraph with links)</h6>
+      <p>This is a paragraph. The <a href="http://www.youtube.com/watch?v=zT2aVoUkSDg">color of links is preset</a> to the Foundation primary color. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content -- so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap <code>strong</code> around type to <strong>make it bold!</strong> You can also use <code>em</code> to <em>italicize your words</em>.</p>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Copy (blockquotes)</h6>
+      <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>
+
+    </div>
   </div>
 
   <br />
 
-  <h6 class="subheader">Small Header Segments</h6>
-  <div class="type-demo">
-    <h1>h1. <small>Small header segment.</small></h1>
-    <h2>h2. <small>Small header segment.</small></h2>
-    <h3>h3. <small>Small header segment.</small></h3>
-    <h4>h4. <small>Small header segment.</small></h4>
-    <h5>h5. <small>Small header segment.</small></h5>
-    <h6>h6. <small>Small header segment.</small></h6>
+  <div class="row">
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Lists (disc)</h6>
+      <ul class="disc">
+        <li>List item with a much longer description or more content.</li>
+        <li>List item</li>
+        <li>List item
+          <ul>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+          </ul>
+        </li>
+        <li>List item</li>
+      </ul>
+
+    </div>
+    <div class="large-6 columns">
+
+      <h6 class="subheader">Lists (circle)</h6>
+      <ul class="circle">
+        <li>List item with a much longer description or more content.</li>
+        <li>List item</li>
+        <li>List item
+          <ul>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+          </ul>
+        </li>
+        <li>List item</li>
+      </ul>
+
+    </div>
   </div>
 
   <br />
 
-  <h6 class="subheader">Copy (paragraphs)</h6>
-  <p>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content -- so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap <code>strong</code> around type to <strong>make it bold!</strong> You can also use <code>em</code> to <em>italicize your words</em>.</p>
+  <div class="row">
+    <div class="large-6 columns">
 
-  <br />
-
-  <h6 class="subheader">Copy (links)</h6>
-  <p>Links are very standard, and the <a href="http://www.youtube.com/watch?v=zT2aVoUkSDg">color is preset</a> to the Foundation primary color.</p>
-
-  <br />
-
-  <h6 class="subheader">Copy (blockquotes)</h6>
-  <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>
-
-  <br />
-
-  <h6 class="subheader">Lists (disc)</h6>
-  <ul class="disc">
-    <li>List item with a much longer description or more content.</li>
-    <li>List item</li>
-    <li>List item
-      <ul>
-        <li>Nested list item</li>
-        <li>Nested list item</li>
+      <h6 class="subheader">Lists (square)</h6>
+      <ul class="square">
+        <li>List item with a much longer description or more content.</li>
+        <li>List item</li>
+        <li>List item
+          <ul>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+          </ul>
+        </li>
+        <li>List item</li>
       </ul>
-    </li>
-    <li>List item</li>
-  </ul>
 
-  <br />
+    </div>
+    <div class="large-6 columns">
 
-  <h6 class="subheader">Lists (circle)</h6>
-  <ul class="circle">
-    <li>List item with a much longer description or more content.</li>
-    <li>List item</li>
-    <li>List item
-      <ul>
-        <li>Nested list item</li>
-        <li>Nested list item</li>
+      <h6 class="subheader">Lists (no-bullet)</h6>
+      <ul class="no-bullet">
+        <li>List item with a much longer description or more content.</li>
+        <li>List item</li>
+        <li>List item
+          <ul>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+          </ul>
+        </li>
+        <li>List item</li>
       </ul>
-    </li>
-    <li>List item</li>
-  </ul>
+
+    </div>
+  </div>
 
   <br />
 
-  <h6 class="subheader">Lists (square)</h6>
-  <ul class="square">
-    <li>List item with a much longer description or more content.</li>
-    <li>List item</li>
-    <li>List item
-      <ul>
-        <li>Nested list item</li>
-        <li>Nested list item</li>
-      </ul>
-    </li>
-    <li>List item</li>
-  </ul>
+  <div class="row">
+    <div class="large-6 columns">
 
-  <br />
-
-  <h6 class="subheader">Lists (no-bullet)</h6>
-  <ul class="no-bullet">
-    <li>List item with a much longer description or more content.</li>
-    <li>List item</li>
-    <li>List item
-      <ul>
-        <li>Nested list item</li>
-        <li>Nested list item</li>
-      </ul>
-    </li>
-    <li>List item</li>
-  </ul>
-
-  <br />
-
-  <h6 class="subheader">Lists (ordered)</h6>
-  <ol>
-    <li>List item with a much longer description or more content.</li>
-    <li>List item</li>
-    <li>List item
+      <h6 class="subheader">Lists (ordered)</h6>
       <ol>
-        <li>Nested list item</li>
-        <li>Nested list item</li>
+        <li>List item with a much longer description or more content.</li>
+        <li>List item</li>
+        <li>List item
+          <ol>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+          </ol>
+        </li>
+        <li>List item</li>
       </ol>
-    </li>
-    <li>List item</li>
-  </ol>
 
-  <br />
+    </div>
+    <div class="large-6 columns">
 
-  <h6 class="subheader">Lists (definition)</h6>
-  <dl>
-    <dt>Definition Title</dt>
-    <dd>Definition Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</dd>
-  </dl>
+      <h6 class="subheader">Lists (definition)</h6>
+      <dl>
+        <dt>Definition Title</dt>
+        <dd>Definition Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</dd>
+      </dl>
+
+    </div>
+  </div>
 
   <br />
 
@@ -4905,8 +5141,6 @@ $tabs-vertical-navigation-<span class="attribute">margin-bottom</span><span clas
 </div>
 
     </section>
-
-    <a href="https://github.com/christhekeele/foundation-sandbox"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
 
     <script src="assets//js/all.js"></script>
 
